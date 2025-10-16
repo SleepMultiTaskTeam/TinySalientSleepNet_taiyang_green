@@ -1,0 +1,73 @@
+Saving results to: ./result/tinysalient/test_doubledata/experiment_20250711_033855/
+==========all opts:==========
+seed: 43
+kfold_num: 1
+input_epoch_num: 120
+freq: 100
+batch_size: 8
+num_epochs: 200
+stop_patience: 20
+learning_rate: 0.003
+weight_decay: 0
+dropout_rate: 0
+beta_1: 0.9
+beta_2: 0.999
+weight: tensor([ 1., 16., 10.,  8.,  6.])
+train_val_cutrate: 0.8
+test_size: 0.1
+val_size: 0.1
+test_dataset: self
+model_dir: None
+data_dir: D:\dataset\SHHS\SHHS1
+ISRUC1_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/
+ISRUC3_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/
+MASS_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/
+SHHS_dir: ../../Datasets/shhs1_process6
+SLEEPEDF153_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs
+taiyang_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2
+ccshs_dir: /mnt/nfsData17/JiaQianru/dataset/ccshs/polysomnography
+cfs_dir: /mnt/nfsData17/JiaQianru/dataset/cfs/polysomnography
+homepap_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/homepap/polysomnography
+composite_dir: /mnt/nfsData18/ZhangShaoqi/CODES/SSSC_1/result/composite_dataset
+dataset: ['ISRUC3']
+ISRUC1_channel: ['C3_A2', 'O1_A2', 'LOC_A2']
+ISRUC1_channel2: ['C4_A1', 'O2_A1', 'ROC_A1']
+ISRUC3_channel: ['C3_A2', 'O1_A2', 'LOC_A2']
+ISRUC3_channel2: ['C4_A1', 'O2_A1', 'ROC_A1']
+MASS_channel: ['C3', 'O1', 'EogL']
+MASS_channel2: ['C4', 'O2', 'EogR']
+SHHS_channel: ['EEG', 'EEG(sec)', 'EOG(L)', 'EMG']
+SLEEPEDF153_channel: ['Fpz-Cz', 'Pz-Oz', 'EOG']
+SLEEPEDF153_channel2: ['Fpz-Cz', 'Pz-Oz', 'EOG']
+taiyang_channel: ['EEG C3-REF', 'EEG O1-REF', 'EOG1']
+ccshs_channel: ['C4', 'ROC']
+cfs_channel: ['C4', 'ROC']
+homepap_channel: ['C3', 'O1', 'E1']
+homepap_channel2: ['C4', 'O2', 'E2']
+yasa_feature: False
+save_dir: ./result/tinysalient/test_doubledata/experiment_20250711_033855/
+save_model_name: model.pkl
+testonly: False
+JXY_shhs1-300_dir: /mnt/nfsData19/ZhangShaoqi/DATASETS/shhs_processed/shhs1
+JXY_shhs1-300_channel: ['C3', 'C4', 'EMG', 'EOG(L)', 'EOG(R)', 'ECG', 'Airflow', 'Sp02']
+JXY_out_dim: 5
+model_select: TinySalientSleepNet
+task: sleep_stage_classification
+data_double: False
+train_num:  8 val_num:  1 test_num:  1
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject1.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject10.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject2.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject3.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject4.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject5.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject6.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject7.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject8.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject9.mat
+load data finish
+===============gen train:val:test data===============
+train data shape:  51
+val data shape:  8
+test data shape:  7
+===============begin fold 0 train===============

@@ -1,0 +1,30 @@
+experimentName: sleepnet_experiment
+trialConcurrency: 1
+maxTrialNumber: 50
+trialGpuNumber: 1
+searchSpaceFile: search_space.json
+trialCommand: python train_shhs_unet.py
+trialCodeDirectory: .
+
+port: 0  # 自动分配端口，避免冲突
+
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: maximize
+
+trainingService:
+  platform: openpai
+  openpaiConfig:
+    host: http://172.31.41.146          # 👈 替换为你的 PAI 地址（如 https://pai.xxx.com）
+    username: ZhaiMengjie                       # 👈 你的PAI用户名
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlpoYWlNZW5namllIiwiYXBwbGljYXRpb24iOmZhbHNlLCJqb2JTcGVjaWZpYyI6ZmFsc2UsImVuY29kZWRGcmFtZXdvcmtOYW1lIjoiIiwiaWF0IjoxNzQ5OTY0NDgxLCJleHAiOjE3NTA1NjkyODF9.f9qnYtmswVirmv64De2pJSTAdh0w6fT36xlWC0MQjlY                # 👈 填入PAI的token（建议用环境变量或 secrets 管理）
+    dockerImage: a4-1:5000/zhangshaoqi/pytorch:1.11.0-cuda11.3-py3.8-nni2.5
+    virtualCluster: default
+    nniManagerNFSMountPath: /mnt/nfs-storage
+    containerNFSMountPath: /mnt/nfs-storage
+    storageConfigName: nfs_storage
+    cpuNumber: 4
+    memorySize: 32g
+    gpuType: RTX2080TI
+    imagePullSecrets: []  # 如有私有镜像仓库填写

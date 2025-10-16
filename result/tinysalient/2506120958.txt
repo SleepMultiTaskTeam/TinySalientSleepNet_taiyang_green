@@ -1,0 +1,178 @@
+==========some new opts changed:==========
+testonly: True
+dataset: taiyang
+==========all opts:==========
+seed: 43
+kfold_num: 1
+input_epoch_num: 10
+freq: 100
+batch_size: 8
+num_epochs: 200
+stop_patience: 20
+learning_rate: 0.003
+weight_decay: 0
+dropout_rate: 0
+beta_1: 0.9
+beta_2: 0.999
+weight: tensor([ 1., 10.,  1.,  6.,  6.])
+train_val_cutrate: 0.8
+test_size: 0.1
+val_size: 0.1
+test_dataset: self
+model_dir: None
+data_dir: D:\dataset\SHHS\SHHS1
+ISRUC1_dir: /mnt/nfsData18/ZhangShaoqi/Datasets/ISRUC-1/
+ISRUC3_dir: /mnt/nfsData18/ZhangShaoqi/Datasets/ISRUC-3/
+MASS_dir: /mnt/nfsData17/ZhangShaoqi/Datasets/MASS_SS3_3000_25C-Cz/
+SHHS_dir: ../../Datasets/shhs1_process6
+SLEEPEDF153_dir: /mnt/nfsData11/JiaQianru/dataset/sleep-edf-153-3chs
+taiyang_dir: /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2
+ccshs_dir: /mnt/nfsData17/JiaQianru/dataset/ccshs/polysomnography
+cfs_dir: /mnt/nfsData17/JiaQianru/dataset/cfs/polysomnography
+homepap_dir: /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography
+composite_dir: /mnt/nfsData18/ZhangShaoqi/CODES/SSSC_1/result/composite_dataset
+dataset: ['taiyang']
+ISRUC1_channel: ['C3_A2', 'O1_A2', 'LOC_A2']
+ISRUC1_channel2: ['C4_A1', 'O2_A1', 'ROC_A1']
+ISRUC3_channel: ['C3_A2', 'O1_A2', 'LOC_A2']
+ISRUC3_channel2: ['C4_A1', 'O2_A1', 'ROC_A1']
+MASS_channel: ['C3', 'O1', 'EogL']
+MASS_channel2: ['C4', 'O2', 'EogR']
+SHHS_channel: ['EEG', 'EEG(sec)', 'EOG(L)', 'EMG']
+SLEEPEDF153_channel: ['Fpz-Cz', 'Pz-Oz', 'EOG']
+SLEEPEDF153_channel2: ['Fpz-Cz', 'Pz-Oz', 'EOG']
+taiyang_channel: ['EEG C4-REF', 'EEG O2-REF', 'EOG2']
+ccshs_channel: ['C4', 'ROC']
+cfs_channel: ['C4', 'ROC']
+homepap_channel: ['C3', 'O1', 'E1']
+homepap_channel2: ['C4', 'O2', 'E2']
+yasa_feature: False
+save_dir: ./result/tinysalient/test_doubledata/
+save_model_name: model.pkl
+testonly: True
+JXY_shhs1-300_dir: /mnt/nfsData19/ZhangShaoqi/DATASETS/shhs_processed/shhs1
+JXY_shhs1-300_channel: ['C3', 'C4', 'EMG', 'EOG(L)', 'EOG(R)', 'ECG', 'Airflow', 'Sp02']
+JXY_out_dim: 5
+model_select: TinySalientSleepNet
+task: sleep_stage_classification
+data_double: False
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/0BEA0C30-BED2-45F0-9D46-CBBF643C746C/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/0BEA0C30-BED2-45F0-9D46-CBBF643C746C/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/17A103D5-54FB-4217-8100-CEF344EE1CB0/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/17A103D5-54FB-4217-8100-CEF344EE1CB0/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/18D9F2A8-F7CC-4A3F-B700-1E289FD0B19D/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/18D9F2A8-F7CC-4A3F-B700-1E289FD0B19D/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/1B8C25CD-8E01-4FFB-A41C-DDB6213EEA4D/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/1B8C25CD-8E01-4FFB-A41C-DDB6213EEA4D/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/1EFA91D6-C020-485F-9EE4-2B636FF87C86/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/1EFA91D6-C020-485F-9EE4-2B636FF87C86/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/2AAE14D4-4D53-4419-A6A4-D0A5079A0A4E/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/2AAE14D4-4D53-4419-A6A4-D0A5079A0A4E/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/2E1657AF-17C2-4B9D-B150-CC059AF1DC5D/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/2E1657AF-17C2-4B9D-B150-CC059AF1DC5D/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/2F3A19B9-54EA-4D48-ABDE-59C8EF1DEFD8/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/2F3A19B9-54EA-4D48-ABDE-59C8EF1DEFD8/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/3B41BBDA-54D9-433E-B17E-45A23842026B/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/3B41BBDA-54D9-433E-B17E-45A23842026B/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/3CF9281E-68B7-4BDE-916D-62339563C8AC/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/3CF9281E-68B7-4BDE-916D-62339563C8AC/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/3CFB9F3B-D9BB-4B03-BC54-6281CC230FCB/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/3CFB9F3B-D9BB-4B03-BC54-6281CC230FCB/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/4B760A44-DBBC-41BD-87CC-7DFF77D89727/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/4B760A44-DBBC-41BD-87CC-7DFF77D89727/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/4D19983A-9E01-46EA-9DA1-824BE3616113/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/4D19983A-9E01-46EA-9DA1-824BE3616113/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/5C46E640-4946-4889-B2CC-A3F315975459/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/5C46E640-4946-4889-B2CC-A3F315975459/X.edf
+Extracting EDF parameters from /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/9AB04B6C-D1BD-4048-9EB5-493C7450B2DD/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+/mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2/9AB04B6C-D1BD-4048-9EB5-493C7450B2DD/X.edf
+===============gen test data only===============
+test data shape:  2015
+epoch_num_by_sub: [1770, 1380, 1770, 1490, 1230, 1240, 1360, 1630, 210, 1270, 1680, 1260, 1280, 1270, 1310]
+===============begin fold 0 test===============
+test_all_time: 19.105839014053345
+the f1:[0.8144482  0.19137578 0.77982044 0.73390365 0.6404099 ]
+the average f1 is: 0.6319915652275085
+Normalized confusion matrix
+the accuracy of every classes:[0.71, 0.47, 0.68, 0.65, 0.81]
+[[7.12160151e-01 2.00189368e-01 5.68104964e-03 1.48789395e-03
+  8.04815366e-02]
+ [6.72016048e-02 4.67402207e-01 4.51354062e-02 0.00000000e+00
+  4.20260782e-01]
+ [4.47538538e-03 2.02013923e-01 6.80258578e-01 1.81501740e-02
+  9.51019393e-02]
+ [8.00640512e-04 2.40192154e-02 3.22658127e-01 6.52522018e-01
+  0.00000000e+00]
+ [6.76935549e-02 1.10255371e-01 1.13498176e-02 0.00000000e+00
+  8.10701257e-01]]
+Confusion matrix, without normalization
+[[5265 1480   42   11  595]
+ [  67  466   45    0  419]
+ [  36 1625 5472  146  765]
+ [   1   30  403  815    0]
+ [ 167  272   28    0 2000]]
+========== 统计太阳电子15个sub的acc和f1 ==========
+[ 太阳sub 1 ] ACC: 0.75197740, macro_F1: 0.65399811, weighted_F1: 0.79836454, all F1: [0.8690293  0.06734007 0.8121827  0.8547718  0.6666666 ]
+[ 太阳sub 2 ] ACC: 0.53188406, macro_F1: 0.46160964, weighted_F1: 0.61274755, all F1: [0.7890625  0.07627118 0.563163   0.32727274 0.5522788 ]
+[ 太阳sub 3 ] ACC: 0.80508475, macro_F1: 0.50474358, weighted_F1: 0.85320663, all F1: [0.95420235 0.04411765 0.743941   0.         0.7814569 ]
+[ 太阳sub 4 ] ACC: 0.73624161, macro_F1: 0.70371257, weighted_F1: 0.77612171, all F1: [0.88198763 0.2774869  0.7950617  0.8497409  0.71428573]
+[ 太阳sub 5 ] ACC: 0.66747967, macro_F1: 0.56633985, weighted_F1: 0.70418069, all F1: [0.79588604 0.32380953 0.8752556  0.27040818]
+[ 太阳sub 6 ] ACC: 0.67258065, macro_F1: 0.59927734, weighted_F1: 0.70265610, all F1: [0.6030534  0.15555556 0.76690394 0.75728154 0.71359223]
+[ 太阳sub 7 ] ACC: 0.51617647, macro_F1: 0.48146108, weighted_F1: 0.54828285, all F1: [0.24545453 0.21016948 0.8053098  0.72289157 0.42348006]
+[ 太阳sub 8 ] ACC: 0.71411043, macro_F1: 0.68623381, weighted_F1: 0.76034862, all F1: [0.84146345 0.22222222 0.75348836 0.9032258  0.7107692 ]
+[ 太阳sub 9 ] ACC: 0.87619048, macro_F1: 0.31762653, weighted_F1: 0.89631846, all F1: [0.9371728 0.3333333 0.        0.       ]
+[ 太阳sub 10 ] ACC: 0.67401575, macro_F1: 0.59456744, weighted_F1: 0.70909822, all F1: [0.5559105  0.19078946 0.8134758  0.72380954 0.68885195]
+[ 太阳sub 11 ] ACC: 0.79166667, macro_F1: 0.67275401, weighted_F1: 0.81173862, all F1: [0.9286143  0.3539823  0.770975   0.61928934 0.6909091 ]
+[ 太阳sub 12 ] ACC: 0.60476190, macro_F1: 0.42947316, weighted_F1: 0.65650039, all F1: [0.60972714 0.18789142 0.8927739  0.         0.4569733 ]
+[ 太阳sub 13 ] ACC: 0.67500000, macro_F1: 0.62210976, weighted_F1: 0.72821398, all F1: [0.7701564  0.16606498 0.704      0.7804878  0.6898396 ]
+[ 太阳sub 14 ] ACC: 0.77874016, macro_F1: 0.67999632, weighted_F1: 0.80007678, all F1: [0.6896552  0.25142857 0.897084   0.81679386 0.74502   ]
+[ 太阳sub 15 ] ACC: 0.70610687, macro_F1: 0.58584710, weighted_F1: 0.75858044, all F1: [0.8606658  0.125      0.7413612  0.44444448 0.75776404]
+[ 太阳15个sub平均 ] ACC: 0.70013446, macro_F1: 0.57065002, weighted_F1: 0.74109570, std_ACC: 0.09492939, std_macro_F1: 0.10733844, std_weighted_F1: 0.08761720
+[ FOLD 0 ] end of test | test_avg_f1 0.63199157 | test_avg_loss 0.88783687 | test_acc 0.69568238 | test_macro_f1 0.63199157 | test_auc 0.00000000
+test_all_time: 19.105839014053345
+[2025-06-12 02:03:43] INFO (nni/MainThread) Intermediate result: 0.6319915652275085  (Index 0)

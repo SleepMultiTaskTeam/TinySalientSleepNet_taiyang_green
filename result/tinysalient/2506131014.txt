@@ -1,0 +1,1578 @@
+==========some new opts changed:==========
+==========all opts:==========
+seed: 43
+kfold_num: 1
+input_epoch_num: 10
+freq: 100
+batch_size: 8
+num_epochs: 200
+stop_patience: 20
+learning_rate: 0.003
+weight_decay: 0
+dropout_rate: 0
+beta_1: 0.9
+beta_2: 0.999
+weight: tensor([ 1., 10.,  1.,  6.,  6.])
+train_val_cutrate: 0.8
+test_size: 0.1
+val_size: 0.1
+test_dataset: self
+model_dir: None
+data_dir: D:\dataset\SHHS\SHHS1
+ISRUC1_dir: /mnt/nfsData18/ZhangShaoqi/Datasets/ISRUC-1/
+ISRUC3_dir: /mnt/nfsData18/ZhangShaoqi/Datasets/ISRUC-3/
+MASS_dir: /mnt/nfsData17/ZhangShaoqi/Datasets/MASS_SS3_3000_25C-Cz/
+SHHS_dir: ../../Datasets/shhs1_process6
+SLEEPEDF153_dir: /mnt/nfsData11/JiaQianru/dataset/sleep-edf-153-3chs
+taiyang_dir: /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2
+ccshs_dir: /mnt/nfsData17/JiaQianru/dataset/ccshs/polysomnography
+cfs_dir: /mnt/nfsData17/JiaQianru/dataset/cfs/polysomnography
+homepap_dir: /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography
+composite_dir: /mnt/nfsData18/ZhangShaoqi/CODES/SSSC_1/result/composite_dataset
+dataset: ['homepap']
+ISRUC1_channel: ['C3_A2', 'O1_A2', 'LOC_A2']
+ISRUC1_channel2: ['C4_A1', 'O2_A1', 'ROC_A1']
+ISRUC3_channel: ['C3_A2', 'O1_A2', 'LOC_A2']
+ISRUC3_channel2: ['C4_A1', 'O2_A1', 'ROC_A1']
+MASS_channel: ['C3', 'O1', 'EogL']
+MASS_channel2: ['C4', 'O2', 'EogR']
+SHHS_channel: ['EEG', 'EEG(sec)', 'EOG(L)', 'EMG']
+SLEEPEDF153_channel: ['Fpz-Cz', 'Pz-Oz', 'EOG']
+SLEEPEDF153_channel2: ['Fpz-Cz', 'Pz-Oz', 'EOG']
+taiyang_channel: ['EEG C4-REF', 'EEG O2-REF', 'EOG2']
+ccshs_channel: ['C4', 'ROC']
+cfs_channel: ['C4', 'ROC']
+homepap_channel: ['C3', 'O1', 'E1']
+homepap_channel2: ['C4', 'O2', 'E2']
+yasa_feature: False
+save_dir: ./result/tinysalient/test_doubledata/
+save_model_name: model.pkl
+testonly: False
+JXY_shhs1-300_dir: /mnt/nfsData19/ZhangShaoqi/DATASETS/shhs_processed/shhs1
+JXY_shhs1-300_channel: ['C3', 'C4', 'EMG', 'EOG(L)', 'EOG(R)', 'ECG', 'Airflow', 'Sp02']
+JXY_out_dim: 5
+model_select: TinySalientSleepNet
+task: sleep_stage_classification
+data_double: False
+train_num:  157 val_num:  20 test_num:  20
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600001.fif...
+Isotrak not found
+    Range : 0 ... 2587499 =      0.000 ... 25874.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600001.fif
+(3, 2586000)
+(3, 862, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600003.fif...
+Isotrak not found
+    Range : 0 ... 2385199 =      0.000 ... 23851.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600003.fif
+(3, 2385000)
+(3, 795, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600004.fif...
+Isotrak not found
+    Range : 0 ... 2636499 =      0.000 ... 26364.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600004.fif
+(3, 2634000)
+(3, 878, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600012.fif...
+Isotrak not found
+    Range : 0 ... 2846499 =      0.000 ... 28464.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600012.fif
+(3, 2844000)
+(3, 948, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600013.fif...
+Isotrak not found
+    Range : 0 ... 2427199 =      0.000 ... 24271.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600013.fif
+(3, 2427000)
+(3, 809, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600017.fif...
+Isotrak not found
+    Range : 0 ... 3107599 =      0.000 ... 31075.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600017.fif
+(3, 3105000)
+(3, 1035, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600021.fif...
+Isotrak not found
+    Range : 0 ... 3024799 =      0.000 ... 30247.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600021.fif
+(3, 3024000)
+(3, 1008, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600022.fif...
+Isotrak not found
+    Range : 0 ... 2389499 =      0.000 ... 23894.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600022.fif
+(3, 2388000)
+(3, 796, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600024.fif...
+Isotrak not found
+    Range : 0 ... 2355199 =      0.000 ... 23551.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600024.fif
+(3, 2355000)
+(3, 785, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600027.fif...
+Isotrak not found
+    Range : 0 ... 2602299 =      0.000 ... 26022.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600027.fif
+(3, 2601000)
+(3, 867, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600031.fif...
+Isotrak not found
+    Range : 0 ... 2833199 =      0.000 ... 28331.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600031.fif
+(3, 2832000)
+(3, 944, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600033.fif...
+Isotrak not found
+    Range : 0 ... 3127599 =      0.000 ... 31275.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600033.fif
+(3, 3126000)
+(3, 1042, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600036.fif...
+Isotrak not found
+    Range : 0 ... 2493499 =      0.000 ... 24934.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600036.fif
+(3, 2493000)
+(3, 831, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600039.fif...
+Isotrak not found
+    Range : 0 ... 2548499 =      0.000 ... 25484.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600039.fif
+(3, 2547000)
+(3, 849, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600042.fif...
+Isotrak not found
+    Range : 0 ... 2726199 =      0.000 ... 27261.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600042.fif
+(3, 2724000)
+(3, 908, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600043.fif...
+Isotrak not found
+    Range : 0 ... 2943199 =      0.000 ... 29431.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600043.fif
+(3, 2943000)
+(3, 981, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600053.fif...
+Isotrak not found
+    Range : 0 ... 2793199 =      0.000 ... 27931.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600053.fif
+(3, 2793000)
+(3, 931, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600055.fif...
+Isotrak not found
+    Range : 0 ... 2754399 =      0.000 ... 27543.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600055.fif
+(3, 2754000)
+(3, 918, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600059.fif...
+Isotrak not found
+    Range : 0 ... 3066399 =      0.000 ... 30663.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600059.fif
+(3, 3066000)
+(3, 1022, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600060.fif...
+Isotrak not found
+    Range : 0 ... 2668499 =      0.000 ... 26684.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600060.fif
+(3, 2667000)
+(3, 889, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600063.fif...
+Isotrak not found
+    Range : 0 ... 2218799 =      0.000 ... 22187.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600063.fif
+(3, 2217000)
+(3, 739, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600064.fif...
+Isotrak not found
+    Range : 0 ... 2944499 =      0.000 ... 29444.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600064.fif
+(3, 2943000)
+(3, 981, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600065.fif...
+Isotrak not found
+    Range : 0 ... 3003199 =      0.000 ... 30031.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600065.fif
+(3, 3003000)
+(3, 1001, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600068.fif...
+Isotrak not found
+    Range : 0 ... 2327499 =      0.000 ... 23274.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600068.fif
+(3, 2325000)
+(3, 775, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600069.fif...
+Isotrak not found
+    Range : 0 ... 2754899 =      0.000 ... 27548.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600069.fif
+(3, 2754000)
+(3, 918, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600072.fif...
+Isotrak not found
+    Range : 0 ... 2864899 =      0.000 ... 28648.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600072.fif
+(3, 2862000)
+(3, 954, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600075.fif...
+Isotrak not found
+    Range : 0 ... 3018699 =      0.000 ... 30186.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600075.fif
+(3, 3018000)
+(3, 1006, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600077.fif...
+Isotrak not found
+    Range : 0 ... 2453999 =      0.000 ... 24539.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600077.fif
+(3, 2454000)
+(3, 818, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600079.fif...
+Isotrak not found
+    Range : 0 ... 2016099 =      0.000 ... 20160.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600079.fif
+(3, 2016000)
+(3, 672, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600080.fif...
+Isotrak not found
+    Range : 0 ... 2578999 =      0.000 ... 25789.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600080.fif
+(3, 2577000)
+(3, 859, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600081.fif...
+Isotrak not found
+    Range : 0 ... 2835799 =      0.000 ... 28357.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600081.fif
+(3, 2835000)
+(3, 945, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600082.fif...
+Isotrak not found
+    Range : 0 ... 3148099 =      0.000 ... 31480.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600082.fif
+(3, 3147000)
+(3, 1049, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600084.fif...
+Isotrak not found
+    Range : 0 ... 2915599 =      0.000 ... 29155.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600084.fif
+(3, 2913000)
+(3, 971, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600088.fif...
+Isotrak not found
+    Range : 0 ... 2226899 =      0.000 ... 22268.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600088.fif
+(3, 2226000)
+(3, 742, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600091.fif...
+Isotrak not found
+    Range : 0 ... 2160999 =      0.000 ... 21609.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600091.fif
+(3, 2160000)
+(3, 720, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600093.fif...
+Isotrak not found
+    Range : 0 ... 2719499 =      0.000 ... 27194.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600093.fif
+(3, 2718000)
+(3, 906, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600094.fif...
+Isotrak not found
+    Range : 0 ... 2850999 =      0.000 ... 28509.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600094.fif
+(3, 2850000)
+(3, 950, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600095.fif...
+Isotrak not found
+    Range : 0 ... 2540199 =      0.000 ... 25401.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600095.fif
+(3, 2538000)
+(3, 846, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600101.fif...
+Isotrak not found
+    Range : 0 ... 2781899 =      0.000 ... 27818.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600101.fif
+(3, 2781000)
+(3, 927, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600103.fif...
+Isotrak not found
+    Range : 0 ... 2678799 =      0.000 ... 26787.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600103.fif
+(3, 2676000)
+(3, 892, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600105.fif...
+Isotrak not found
+    Range : 0 ... 2600299 =      0.000 ... 26002.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600105.fif
+(3, 2598000)
+(3, 866, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600107.fif...
+Isotrak not found
+    Range : 0 ... 2753199 =      0.000 ... 27531.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600107.fif
+(3, 2751000)
+(3, 917, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600108.fif...
+Isotrak not found
+    Range : 0 ... 3066499 =      0.000 ... 30664.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600108.fif
+(3, 3066000)
+(3, 1022, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600110.fif...
+Isotrak not found
+    Range : 0 ... 2523499 =      0.000 ... 25234.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600110.fif
+(3, 2523000)
+(3, 841, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600112.fif...
+Isotrak not found
+    Range : 0 ... 2466499 =      0.000 ... 24664.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600112.fif
+(3, 2466000)
+(3, 822, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600113.fif...
+Isotrak not found
+    Range : 0 ... 2663499 =      0.000 ... 26634.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600113.fif
+(3, 2661000)
+(3, 887, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600115.fif...
+Isotrak not found
+    Range : 0 ... 2337599 =      0.000 ... 23375.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600115.fif
+(3, 2337000)
+(3, 779, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600119.fif...
+Isotrak not found
+    Range : 0 ... 2400799 =      0.000 ... 24007.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600119.fif
+(3, 2400000)
+(3, 800, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600122.fif...
+Isotrak not found
+    Range : 0 ... 2474599 =      0.000 ... 24745.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600122.fif
+(3, 2472000)
+(3, 824, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600124.fif...
+Isotrak not found
+    Range : 0 ... 2474999 =      0.000 ... 24749.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600124.fif
+(3, 2475000)
+(3, 825, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600125.fif...
+Isotrak not found
+    Range : 0 ... 2985199 =      0.000 ... 29851.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600125.fif
+(3, 2985000)
+(3, 995, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600126.fif...
+Isotrak not found
+    Range : 0 ... 2780799 =      0.000 ... 27807.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600126.fif
+(3, 2778000)
+(3, 926, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600131.fif...
+Isotrak not found
+    Range : 0 ... 3214799 =      0.000 ... 32147.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600131.fif
+(3, 3213000)
+(3, 1071, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600132.fif...
+Isotrak not found
+    Range : 0 ... 2300899 =      0.000 ... 23008.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600132.fif
+(3, 2298000)
+(3, 766, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600135.fif...
+Isotrak not found
+    Range : 0 ... 2955499 =      0.000 ... 29554.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600135.fif
+(3, 2955000)
+(3, 985, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600137.fif...
+Isotrak not found
+    Range : 0 ... 2802799 =      0.000 ... 28027.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600137.fif
+(3, 2802000)
+(3, 934, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600139.fif...
+Isotrak not found
+    Range : 0 ... 2872099 =      0.000 ... 28720.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600139.fif
+(3, 2871000)
+(3, 957, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600141.fif...
+Isotrak not found
+    Range : 0 ... 2543499 =      0.000 ... 25434.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600141.fif
+(3, 2541000)
+(3, 847, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600142.fif...
+Isotrak not found
+    Range : 0 ... 2881599 =      0.000 ... 28815.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600142.fif
+(3, 2880000)
+(3, 960, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600144.fif...
+Isotrak not found
+    Range : 0 ... 2926799 =      0.000 ... 29267.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600144.fif
+(3, 2925000)
+(3, 975, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600146.fif...
+Isotrak not found
+    Range : 0 ... 2355799 =      0.000 ... 23557.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600146.fif
+(3, 2355000)
+(3, 785, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600147.fif...
+Isotrak not found
+    Range : 0 ... 2902799 =      0.000 ... 29027.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600147.fif
+(3, 2901000)
+(3, 967, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600148.fif...
+Isotrak not found
+    Range : 0 ... 2565499 =      0.000 ... 25654.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600148.fif
+(3, 2565000)
+(3, 855, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600149.fif...
+Isotrak not found
+    Range : 0 ... 2961599 =      0.000 ... 29615.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600149.fif
+(3, 2961000)
+(3, 987, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600151.fif...
+Isotrak not found
+    Range : 0 ... 2725999 =      0.000 ... 27259.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600151.fif
+(3, 2724000)
+(3, 908, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600156.fif...
+Isotrak not found
+    Range : 0 ... 3062099 =      0.000 ... 30620.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600156.fif
+(3, 3060000)
+(3, 1020, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600161.fif...
+Isotrak not found
+    Range : 0 ... 3040499 =      0.000 ... 30404.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600161.fif
+(3, 3039000)
+(3, 1013, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600163.fif...
+Isotrak not found
+    Range : 0 ... 2492999 =      0.000 ... 24929.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600163.fif
+(3, 2493000)
+(3, 831, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600167.fif...
+Isotrak not found
+    Range : 0 ... 2256699 =      0.000 ... 22566.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600167.fif
+(3, 2256000)
+(3, 752, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600169.fif...
+Isotrak not found
+    Range : 0 ... 2513199 =      0.000 ... 25131.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600169.fif
+(3, 2511000)
+(3, 837, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600170.fif...
+Isotrak not found
+    Range : 0 ... 2964899 =      0.000 ... 29648.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600170.fif
+(3, 2964000)
+(3, 988, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600179.fif...
+Isotrak not found
+    Range : 0 ... 2605499 =      0.000 ... 26054.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600179.fif
+(3, 2604000)
+(3, 868, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600180.fif...
+Isotrak not found
+    Range : 0 ... 2802999 =      0.000 ... 28029.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600180.fif
+(3, 2802000)
+(3, 934, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600181.fif...
+Isotrak not found
+    Range : 0 ... 2798499 =      0.000 ... 27984.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600181.fif
+(3, 2796000)
+(3, 932, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600182.fif...
+Isotrak not found
+    Range : 0 ... 2692499 =      0.000 ... 26924.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600182.fif
+(3, 2691000)
+(3, 897, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600183.fif...
+Isotrak not found
+    Range : 0 ... 2725499 =      0.000 ... 27254.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600183.fif
+(3, 2724000)
+(3, 908, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600186.fif...
+Isotrak not found
+    Range : 0 ... 2939299 =      0.000 ... 29392.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600186.fif
+(3, 2937000)
+(3, 979, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600187.fif...
+Isotrak not found
+    Range : 0 ... 2735599 =      0.000 ... 27355.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600187.fif
+(3, 2733000)
+(3, 911, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600189.fif...
+Isotrak not found
+    Range : 0 ... 2635499 =      0.000 ... 26354.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600189.fif
+(3, 2634000)
+(3, 878, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600191.fif...
+Isotrak not found
+    Range : 0 ... 2960299 =      0.000 ... 29602.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600191.fif
+(3, 2958000)
+(3, 986, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600192.fif...
+Isotrak not found
+    Range : 0 ... 2663399 =      0.000 ... 26633.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600192.fif
+(3, 2661000)
+(3, 887, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600193.fif...
+Isotrak not found
+    Range : 0 ... 4419099 =      0.000 ... 44190.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600193.fif
+(3, 4419000)
+(3, 1473, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600195.fif...
+Isotrak not found
+    Range : 0 ... 2542999 =      0.000 ... 25429.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600195.fif
+(3, 2541000)
+(3, 847, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600196.fif...
+Isotrak not found
+    Range : 0 ... 2505499 =      0.000 ... 25054.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600196.fif
+(3, 2505000)
+(3, 835, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600198.fif...
+Isotrak not found
+    Range : 0 ... 2956799 =      0.000 ... 29567.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600198.fif
+(3, 2955000)
+(3, 985, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600201.fif...
+Isotrak not found
+    Range : 0 ... 3401499 =      0.000 ... 34014.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600201.fif
+(3, 3399000)
+(3, 1133, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600202.fif...
+Isotrak not found
+    Range : 0 ... 2680799 =      0.000 ... 26807.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600202.fif
+(3, 2679000)
+(3, 893, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600204.fif...
+Isotrak not found
+    Range : 0 ... 3691899 =      0.000 ... 36918.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600204.fif
+(3, 3690000)
+(3, 1230, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600206.fif...
+Isotrak not found
+    Range : 0 ... 2784499 =      0.000 ... 27844.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600206.fif
+(3, 2784000)
+(3, 928, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600208.fif...
+Isotrak not found
+    Range : 0 ... 3741099 =      0.000 ... 37410.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600208.fif
+(3, 3741000)
+(3, 1247, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600210.fif...
+Isotrak not found
+    Range : 0 ... 2776099 =      0.000 ... 27760.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600210.fif
+(3, 2775000)
+(3, 925, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600212.fif...
+Isotrak not found
+    Range : 0 ... 3027599 =      0.000 ... 30275.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600212.fif
+(3, 3027000)
+(3, 1009, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600213.fif...
+Isotrak not found
+    Range : 0 ... 3267399 =      0.000 ... 32673.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600213.fif
+(3, 3267000)
+(3, 1089, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600216.fif...
+Isotrak not found
+    Range : 0 ... 3111999 =      0.000 ... 31119.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600216.fif
+(3, 3111000)
+(3, 1037, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600217.fif...
+Isotrak not found
+    Range : 0 ... 2343299 =      0.000 ... 23432.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600217.fif
+(3, 2343000)
+(3, 781, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600219.fif...
+Isotrak not found
+    Range : 0 ... 2763199 =      0.000 ... 27631.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600219.fif
+(3, 2763000)
+(3, 921, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600223.fif...
+Isotrak not found
+    Range : 0 ... 2827499 =      0.000 ... 28274.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600223.fif
+(3, 2826000)
+(3, 942, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600224.fif...
+Isotrak not found
+    Range : 0 ... 2513499 =      0.000 ... 25134.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600224.fif
+(3, 2511000)
+(3, 837, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600225.fif...
+Isotrak not found
+    Range : 0 ... 2801999 =      0.000 ... 28019.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600225.fif
+(3, 2802000)
+(3, 934, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600229.fif...
+Isotrak not found
+    Range : 0 ... 2931199 =      0.000 ... 29311.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600229.fif
+(3, 2931000)
+(3, 977, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600232.fif...
+Isotrak not found
+    Range : 0 ... 2028799 =      0.000 ... 20287.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600232.fif
+(3, 2028000)
+(3, 676, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600237.fif...
+Isotrak not found
+    Range : 0 ... 3104799 =      0.000 ... 31047.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600237.fif
+(3, 3102000)
+(3, 1034, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600241.fif...
+Isotrak not found
+    Range : 0 ... 2622399 =      0.000 ... 26223.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600241.fif
+(3, 2622000)
+(3, 874, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600243.fif...
+Isotrak not found
+    Range : 0 ... 2590699 =      0.000 ... 25906.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600243.fif
+(3, 2589000)
+(3, 863, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600246.fif...
+Isotrak not found
+    Range : 0 ... 2781199 =      0.000 ... 27811.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600246.fif
+(3, 2781000)
+(3, 927, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600250.fif...
+Isotrak not found
+    Range : 0 ... 2661999 =      0.000 ... 26619.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600250.fif
+(3, 2661000)
+(3, 887, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600257.fif...
+Isotrak not found
+    Range : 0 ... 2627499 =      0.000 ... 26274.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600257.fif
+(3, 2625000)
+(3, 875, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600263.fif...
+Isotrak not found
+    Range : 0 ... 2936299 =      0.000 ... 29362.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600263.fif
+(3, 2934000)
+(3, 978, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600265.fif...
+Isotrak not found
+    Range : 0 ... 2876899 =      0.000 ... 28768.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600265.fif
+(3, 2874000)
+(3, 958, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600270.fif...
+Isotrak not found
+    Range : 0 ... 2611999 =      0.000 ... 26119.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600270.fif
+(3, 2610000)
+(3, 870, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600272.fif...
+Isotrak not found
+    Range : 0 ... 2596099 =      0.000 ... 25960.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600272.fif
+(3, 2595000)
+(3, 865, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600273.fif...
+Isotrak not found
+    Range : 0 ... 2626299 =      0.000 ... 26262.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600273.fif
+(3, 2625000)
+(3, 875, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600274.fif...
+Isotrak not found
+    Range : 0 ... 2803599 =      0.000 ... 28035.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600274.fif
+(3, 2802000)
+(3, 934, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600276.fif...
+Isotrak not found
+    Range : 0 ... 2778999 =      0.000 ... 27789.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600276.fif
+(3, 2778000)
+(3, 926, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600281.fif...
+Isotrak not found
+    Range : 0 ... 2818799 =      0.000 ... 28187.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600281.fif
+(3, 2817000)
+(3, 939, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600282.fif...
+Isotrak not found
+    Range : 0 ... 3104099 =      0.000 ... 31040.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600282.fif
+(3, 3102000)
+(3, 1034, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600283.fif...
+Isotrak not found
+    Range : 0 ... 2467499 =      0.000 ... 24674.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600283.fif
+(3, 2466000)
+(3, 822, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600284.fif...
+Isotrak not found
+    Range : 0 ... 3113199 =      0.000 ... 31131.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600284.fif
+(3, 3111000)
+(3, 1037, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600286.fif...
+Isotrak not found
+    Range : 0 ... 4131099 =      0.000 ... 41310.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600286.fif
+(3, 4131000)
+(3, 1377, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600287.fif...
+Isotrak not found
+    Range : 0 ... 2658999 =      0.000 ... 26589.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600287.fif
+(3, 2658000)
+(3, 886, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600289.fif...
+Isotrak not found
+    Range : 0 ... 2327499 =      0.000 ... 23274.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600289.fif
+(3, 2325000)
+(3, 775, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600292.fif...
+Isotrak not found
+    Range : 0 ... 2873499 =      0.000 ... 28734.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600292.fif
+(3, 2871000)
+(3, 957, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600295.fif...
+Isotrak not found
+    Range : 0 ... 2605999 =      0.000 ... 26059.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600295.fif
+(3, 2604000)
+(3, 868, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600298.fif...
+Isotrak not found
+    Range : 0 ... 3018099 =      0.000 ... 30180.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600298.fif
+(3, 3018000)
+(3, 1006, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600299.fif...
+Isotrak not found
+    Range : 0 ... 2447199 =      0.000 ... 24471.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600299.fif
+(3, 2445000)
+(3, 815, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600300.fif...
+Isotrak not found
+    Range : 0 ... 2553699 =      0.000 ... 25536.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600300.fif
+(3, 2553000)
+(3, 851, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600301.fif...
+Isotrak not found
+    Range : 0 ... 2550799 =      0.000 ... 25507.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600301.fif
+(3, 2550000)
+(3, 850, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600303.fif...
+Isotrak not found
+    Range : 0 ... 2649499 =      0.000 ... 26494.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600303.fif
+(3, 2649000)
+(3, 883, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600306.fif...
+Isotrak not found
+    Range : 0 ... 2748199 =      0.000 ... 27481.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600306.fif
+(3, 2748000)
+(3, 916, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600313.fif...
+Isotrak not found
+    Range : 0 ... 2427999 =      0.000 ... 24279.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600313.fif
+(3, 2427000)
+(3, 809, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600314.fif...
+Isotrak not found
+    Range : 0 ... 2712999 =      0.000 ... 27129.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600314.fif
+(3, 2712000)
+(3, 904, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600319.fif...
+Isotrak not found
+    Range : 0 ... 2576999 =      0.000 ... 25769.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600319.fif
+(3, 2577000)
+(3, 859, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600321.fif...
+Isotrak not found
+    Range : 0 ... 2715199 =      0.000 ... 27151.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600321.fif
+(3, 2715000)
+(3, 905, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600323.fif...
+Isotrak not found
+    Range : 0 ... 2702999 =      0.000 ... 27029.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600323.fif
+(3, 2703000)
+(3, 901, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600324.fif...
+Isotrak not found
+    Range : 0 ... 2564499 =      0.000 ... 25644.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600324.fif
+(3, 2562000)
+(3, 854, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600326.fif...
+Isotrak not found
+    Range : 0 ... 2457499 =      0.000 ... 24574.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600326.fif
+(3, 2457000)
+(3, 819, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600327.fif...
+Isotrak not found
+    Range : 0 ... 2308299 =      0.000 ... 23082.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600327.fif
+(3, 2307000)
+(3, 769, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600331.fif...
+Isotrak not found
+    Range : 0 ... 2621499 =      0.000 ... 26214.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600331.fif
+(3, 2619000)
+(3, 873, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600336.fif...
+Isotrak not found
+    Range : 0 ... 2430999 =      0.000 ... 24309.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600336.fif
+(3, 2430000)
+(3, 810, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600340.fif...
+Isotrak not found
+    Range : 0 ... 4695099 =      0.000 ... 46950.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600340.fif
+(3, 4695000)
+(3, 1565, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600342.fif...
+Isotrak not found
+    Range : 0 ... 2844399 =      0.000 ... 28443.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600342.fif
+(3, 2844000)
+(3, 948, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600345.fif...
+Isotrak not found
+    Range : 0 ... 2247999 =      0.000 ... 22479.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600345.fif
+(3, 2247000)
+(3, 749, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600349.fif...
+Isotrak not found
+    Range : 0 ... 2722999 =      0.000 ... 27229.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600349.fif
+(3, 2721000)
+(3, 907, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600351.fif...
+Isotrak not found
+    Range : 0 ... 2804499 =      0.000 ... 28044.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600351.fif
+(3, 2802000)
+(3, 934, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600352.fif...
+Isotrak not found
+    Range : 0 ... 2824499 =      0.000 ... 28244.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600352.fif
+(3, 2823000)
+(3, 941, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600354.fif...
+Isotrak not found
+    Range : 0 ... 3020099 =      0.000 ... 30200.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600354.fif
+(3, 3018000)
+(3, 1006, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600355.fif...
+Isotrak not found
+    Range : 0 ... 2988699 =      0.000 ... 29886.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600355.fif
+(3, 2988000)
+(3, 996, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600357.fif...
+Isotrak not found
+    Range : 0 ... 2961799 =      0.000 ... 29617.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600357.fif
+(3, 2961000)
+(3, 987, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600359.fif...
+Isotrak not found
+    Range : 0 ... 2654499 =      0.000 ... 26544.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600359.fif
+(3, 2652000)
+(3, 884, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600363.fif...
+Isotrak not found
+    Range : 0 ... 2801899 =      0.000 ... 28018.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600363.fif
+(3, 2799000)
+(3, 933, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600364.fif...
+Isotrak not found
+    Range : 0 ... 3096099 =      0.000 ... 30960.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600364.fif
+(3, 3096000)
+(3, 1032, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600367.fif...
+Isotrak not found
+    Range : 0 ... 2823899 =      0.000 ... 28238.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600367.fif
+(3, 2823000)
+(3, 941, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600373.fif...
+Isotrak not found
+    Range : 0 ... 2844399 =      0.000 ... 28443.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/full/homepap-lab-full-1600373.fif
+(3, 2844000)
+(3, 948, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600002.fif...
+Isotrak not found
+    Range : 0 ... 2777299 =      0.000 ... 27772.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600002.fif
+(3, 2775000)
+(3, 925, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600006.fif...
+Isotrak not found
+    Range : 0 ... 2511799 =      0.000 ... 25117.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600006.fif
+(3, 2511000)
+(3, 837, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600009.fif...
+Isotrak not found
+    Range : 0 ... 3619599 =      0.000 ... 36195.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600009.fif
+(3, 3618000)
+(3, 1206, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600010.fif...
+Isotrak not found
+    Range : 0 ... 2614599 =      0.000 ... 26145.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600010.fif
+(3, 2613000)
+(3, 871, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600018.fif...
+Isotrak not found
+    Range : 0 ... 2534399 =      0.000 ... 25343.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600018.fif
+(3, 2532000)
+(3, 844, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600029.fif...
+Isotrak not found
+    Range : 0 ... 2867399 =      0.000 ... 28673.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600029.fif
+(3, 2865000)
+(3, 955, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600038.fif...
+Isotrak not found
+    Range : 0 ... 2919199 =      0.000 ... 29191.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600038.fif
+(3, 2919000)
+(3, 973, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600046.fif...
+Isotrak not found
+    Range : 0 ... 3192099 =      0.000 ... 31920.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600046.fif
+(3, 3192000)
+(3, 1064, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600048.fif...
+Isotrak not found
+    Range : 0 ... 2765999 =      0.000 ... 27659.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600048.fif
+(3, 2766000)
+(3, 922, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600056.fif...
+Isotrak not found
+    Range : 0 ... 2724999 =      0.000 ... 27249.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600056.fif
+(3, 2724000)
+(3, 908, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600071.fif...
+Isotrak not found
+    Range : 0 ... 3063499 =      0.000 ... 30634.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600071.fif
+(3, 3063000)
+(3, 1021, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600076.fif...
+Isotrak not found
+    Range : 0 ... 2658499 =      0.000 ... 26584.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600076.fif
+(3, 2658000)
+(3, 886, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600090.fif...
+Isotrak not found
+    Range : 0 ... 3074699 =      0.000 ... 30746.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600090.fif
+(3, 3072000)
+(3, 1024, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600092.fif...
+Isotrak not found
+    Range : 0 ... 2683799 =      0.000 ... 26837.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600092.fif
+(3, 2682000)
+(3, 894, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600096.fif...
+Isotrak not found
+    Range : 0 ... 2880399 =      0.000 ... 28803.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600096.fif
+(3, 2880000)
+(3, 960, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600109.fif...
+Isotrak not found
+    Range : 0 ... 2527999 =      0.000 ... 25279.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600109.fif
+(3, 2526000)
+(3, 842, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600129.fif...
+Isotrak not found
+    Range : 0 ... 2445499 =      0.000 ... 24454.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600129.fif
+(3, 2445000)
+(3, 815, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600134.fif...
+Isotrak not found
+    Range : 0 ... 2578199 =      0.000 ... 25781.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600134.fif
+(3, 2577000)
+(3, 859, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600150.fif...
+Isotrak not found
+    Range : 0 ... 3030799 =      0.000 ... 30307.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600150.fif
+(3, 3030000)
+(3, 1010, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600166.fif...
+Isotrak not found
+    Range : 0 ... 3060499 =      0.000 ... 30604.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600166.fif
+(3, 3060000)
+(3, 1020, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600168.fif...
+Isotrak not found
+    Range : 0 ... 3025499 =      0.000 ... 30254.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600168.fif
+(3, 3024000)
+(3, 1008, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600175.fif...
+Isotrak not found
+    Range : 0 ... 2602999 =      0.000 ... 26029.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600175.fif
+(3, 2601000)
+(3, 867, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600184.fif...
+Isotrak not found
+    Range : 0 ... 2786799 =      0.000 ... 27867.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600184.fif
+(3, 2784000)
+(3, 928, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600185.fif...
+Isotrak not found
+    Range : 0 ... 2820399 =      0.000 ... 28203.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600185.fif
+(3, 2820000)
+(3, 940, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600199.fif...
+Isotrak not found
+    Range : 0 ... 2720999 =      0.000 ... 27209.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600199.fif
+(3, 2721000)
+(3, 907, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600205.fif...
+Isotrak not found
+    Range : 0 ... 2556999 =      0.000 ... 25569.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600205.fif
+(3, 2556000)
+(3, 852, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600209.fif...
+Isotrak not found
+    Range : 0 ... 2732399 =      0.000 ... 27323.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600209.fif
+(3, 2730000)
+(3, 910, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600214.fif...
+Isotrak not found
+    Range : 0 ... 2817599 =      0.000 ... 28175.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600214.fif
+(3, 2817000)
+(3, 939, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600228.fif...
+Isotrak not found
+    Range : 0 ... 2739999 =      0.000 ... 27399.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600228.fif
+(3, 2739000)
+(3, 913, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600234.fif...
+Isotrak not found
+    Range : 0 ... 2531799 =      0.000 ... 25317.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600234.fif
+(3, 2529000)
+(3, 843, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600240.fif...
+Isotrak not found
+    Range : 0 ... 2583999 =      0.000 ... 25839.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600240.fif
+(3, 2583000)
+(3, 861, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600251.fif...
+Isotrak not found
+    Range : 0 ... 2730899 =      0.000 ... 27308.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600251.fif
+(3, 2730000)
+(3, 910, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600258.fif...
+Isotrak not found
+    Range : 0 ... 3022499 =      0.000 ... 30224.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600258.fif
+(3, 3021000)
+(3, 1007, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600267.fif...
+Isotrak not found
+    Range : 0 ... 2343999 =      0.000 ... 23439.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600267.fif
+(3, 2343000)
+(3, 781, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600268.fif...
+Isotrak not found
+    Range : 0 ... 2913199 =      0.000 ... 29131.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600268.fif
+(3, 2913000)
+(3, 971, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600294.fif...
+Isotrak not found
+    Range : 0 ... 3732099 =      0.000 ... 37320.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600294.fif
+(3, 3732000)
+(3, 1244, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600304.fif...
+Isotrak not found
+    Range : 0 ... 2475799 =      0.000 ... 24757.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600304.fif
+(3, 2475000)
+(3, 825, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600311.fif...
+Isotrak not found
+    Range : 0 ... 2455299 =      0.000 ... 24552.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600311.fif
+(3, 2454000)
+(3, 818, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600328.fif...
+Isotrak not found
+    Range : 0 ... 3294299 =      0.000 ... 32942.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600328.fif
+(3, 3294000)
+(3, 1098, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600330.fif...
+Isotrak not found
+    Range : 0 ... 2499499 =      0.000 ... 24994.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600330.fif
+(3, 2499000)
+(3, 833, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600332.fif...
+Isotrak not found
+    Range : 0 ... 3906099 =      0.000 ... 39060.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600332.fif
+(3, 3906000)
+(3, 1302, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600343.fif...
+Isotrak not found
+    Range : 0 ... 2367399 =      0.000 ... 23673.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600343.fif
+(3, 2367000)
+(3, 789, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600356.fif...
+Isotrak not found
+    Range : 0 ... 2646399 =      0.000 ... 26463.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600356.fif
+(3, 2646000)
+(3, 882, 3000)
+Opening raw data file /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600358.fif...
+Isotrak not found
+    Range : 0 ... 2754699 =      0.000 ... 27546.990 secs
+Ready.
+/mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography/edfs_0602/lab/split/homepap-lab-split-1600358.fif
+(3, 2754000)
+(3, 918, 3000)
+load data finish
+===============gen train:val:test data===============
+train data shape:  14380
+val data shape:  1866
+test data shape:  1852
+===============begin fold 0 train===============
+[ FOLD 0 ] [ EPOCH  1 ] time: 269.05s | train_avg_loss 1.09834609 | valid_avg_loss 1.01589699 | valid_acc 0.43124330 | valid_f1 [0.79401611 0.34311428 0.07115698 0.52134236 0.38580815] | valid_avg_f1 0.42308758 |valid_macro_f1 0.42308758 | valid_auc 0.71380218
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  2 ] time: 271.34s | train_avg_loss 0.96140211 | valid_avg_loss 0.95945655 | valid_acc 0.54549839 | valid_f1 [0.70763242 0.34071043 0.49494571 0.59843856 0.56545143] | valid_avg_f1 0.54143571 |valid_macro_f1 0.54143571 | valid_auc 0.75491329
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  3 ] time: 269.94s | train_avg_loss 0.88327643 | valid_avg_loss 0.85266044 | valid_acc 0.54003215 | valid_f1 [0.75820425 0.42191373 0.36685739 0.57064956 0.64680716] | valid_avg_f1 0.55288642 |valid_macro_f1 0.55288642 | valid_auc 0.77449851
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  4 ] time: 267.57s | train_avg_loss 0.80561722 | valid_avg_loss 0.79352564 | valid_acc 0.61130761 | valid_f1 [0.80428588 0.43818346 0.50405515 0.62431038 0.73180873] | valid_avg_f1 0.62052872 |valid_macro_f1 0.62052872 | valid_auc 0.80284124
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  5 ] time: 267.69s | train_avg_loss 0.75290011 | valid_avg_loss 0.70333527 | valid_acc 0.62797428 | valid_f1 [0.81875077 0.45411796 0.51633065 0.68370221 0.7113191 ] | valid_avg_f1 0.63684414 |valid_macro_f1 0.63684414 | valid_auc 0.81578382
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  6 ] time: 278.21s | train_avg_loss 0.71900813 | valid_avg_loss 0.91376837 | valid_acc 0.62604502 | valid_f1 [0.81765646 0.41058232 0.62387178 0.57982784 0.67362214] | valid_avg_f1 0.62111211 |valid_macro_f1 0.62111211 | valid_auc 0.78832458
+[ FOLD 0 ] [ EPOCH  7 ] time: 263.59s | train_avg_loss 0.70081595 | valid_avg_loss 0.79572092 | valid_acc 0.64935691 | valid_f1 [0.8214198  0.4608076  0.60190443 0.58898722 0.78133233] | valid_avg_f1 0.65089028 |valid_macro_f1 0.65089028 | valid_auc 0.81250356
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  8 ] time: 260.16s | train_avg_loss 0.68535985 | valid_avg_loss 0.75962500 | valid_acc 0.65187567 | valid_f1 [0.82000246 0.46763969 0.6044016  0.58889809 0.79783864] | valid_avg_f1 0.65575610 |valid_macro_f1 0.65575610 | valid_auc 0.81850205
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  9 ] time: 264.76s | train_avg_loss 0.66105834 | valid_avg_loss 0.68080134 | valid_acc 0.66704180 | valid_f1 [0.82508332 0.48441885 0.60958653 0.64412417 0.78309305] | valid_avg_f1 0.66926119 |valid_macro_f1 0.66926119 | valid_auc 0.82974972
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 10 ] time: 262.70s | train_avg_loss 0.63966744 | valid_avg_loss 0.76387422 | valid_acc 0.67550911 | valid_f1 [0.84090137 0.48362235 0.61455382 0.62870403 0.75144509] | valid_avg_f1 0.66384533 |valid_macro_f1 0.66384533 | valid_auc 0.82497034
+[ FOLD 0 ] [ EPOCH 11 ] time: 266.61s | train_avg_loss 0.64066296 | valid_avg_loss 0.70029312 | valid_acc 0.65112540 | valid_f1 [0.83770855 0.48425142 0.540793   0.62383009 0.79723113] | valid_avg_f1 0.65676284 |valid_macro_f1 0.65676284 | valid_auc 0.82805263
+[ FOLD 0 ] [ EPOCH 12 ] time: 260.77s | train_avg_loss 0.61864555 | valid_avg_loss 0.69095644 | valid_acc 0.68408360 | valid_f1 [0.83490909 0.48090909 0.64140969 0.65872115 0.80665067] | valid_avg_f1 0.68451994 |valid_macro_f1 0.68451994 | valid_auc 0.83431607
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 13 ] time: 266.10s | train_avg_loss 0.61372552 | valid_avg_loss 0.78052615 | valid_acc 0.65278671 | valid_f1 [0.84236511 0.44611465 0.63156013 0.66873545 0.68844656] | valid_avg_f1 0.65544438 |valid_macro_f1 0.65544438 | valid_auc 0.81143135
+[ FOLD 0 ] [ EPOCH 14 ] time: 263.96s | train_avg_loss 0.60240392 | valid_avg_loss 0.73442124 | valid_acc 0.62508039 | valid_f1 [0.84051914 0.43956568 0.45977985 0.72662669 0.74389417] | valid_avg_f1 0.64207711 |valid_macro_f1 0.64207711 | valid_auc 0.81491114
+[ FOLD 0 ] [ EPOCH 15 ] time: 391.43s | train_avg_loss 0.59571506 | valid_avg_loss 0.66110554 | valid_acc 0.67411576 | valid_f1 [0.82436748 0.48430001 0.61665444 0.67135325 0.8109215 ] | valid_avg_f1 0.68151934 |valid_macro_f1 0.68151934 | valid_auc 0.83496082
+[ FOLD 0 ] [ EPOCH 16 ] time: 1170.80s | train_avg_loss 0.58252859 | valid_avg_loss 0.68422621 | valid_acc 0.66672026 | valid_f1 [0.83733849 0.47961631 0.59430173 0.63896384 0.81498417] | valid_avg_f1 0.67304091 |valid_macro_f1 0.67304091 | valid_auc 0.83228420
+[ FOLD 0 ] [ EPOCH 17 ] time: 1363.79s | train_avg_loss 0.58846880 | valid_avg_loss 0.67299482 | valid_acc 0.67995713 | valid_f1 [0.79226804 0.47942503 0.65863664 0.70004243 0.79135547] | valid_avg_f1 0.68434552 |valid_macro_f1 0.68434552 | valid_auc 0.83244318
+[ FOLD 0 ] [ EPOCH 18 ] time: 1365.17s | train_avg_loss 0.56686278 | valid_avg_loss 0.76127783 | valid_acc 0.68060021 | valid_f1 [0.84705882 0.46811621 0.62646801 0.60147034 0.81489214] | valid_avg_f1 0.67160110 |valid_macro_f1 0.67160110 | valid_auc 0.82660794
+[ FOLD 0 ] [ EPOCH 19 ] time: 1366.73s | train_avg_loss 0.56723615 | valid_avg_loss 0.63814468 | valid_acc 0.66511254 | valid_f1 [0.81264842 0.47708963 0.60247748 0.70897436 0.79350886] | valid_avg_f1 0.67893975 |valid_macro_f1 0.67893975 | valid_auc 0.83259357
+[ FOLD 0 ] [ EPOCH 20 ] time: 1038.01s | train_avg_loss 0.55829579 | valid_avg_loss 1.39571157 | valid_acc 0.54764202 | valid_f1 [0.78352916 0.25071954 0.39426089 0.44452537 0.70912116] | valid_avg_f1 0.51643122 |valid_macro_f1 0.51643122 | valid_auc 0.75297809
+[ FOLD 0 ] [ EPOCH 21 ] time: 263.69s | train_avg_loss 0.55711743 | valid_avg_loss 1.11699864 | valid_acc 0.58735263 | valid_f1 [0.71441606 0.40911659 0.50345918 0.58627348 0.66539343] | valid_avg_f1 0.57573175 |valid_macro_f1 0.57573175 | valid_auc 0.76948162
+[ FOLD 0 ] [ EPOCH 22 ] time: 266.97s | train_avg_loss 0.55837527 | valid_avg_loss 0.72415426 | valid_acc 0.65766345 | valid_f1 [0.84752149 0.46518897 0.57042119 0.69145946 0.73283358] | valid_avg_f1 0.66148494 |valid_macro_f1 0.66148494 | valid_auc 0.82331883
+[ FOLD 0 ] [ EPOCH 23 ] time: 273.00s | train_avg_loss 0.54680345 | valid_avg_loss 0.65518349 | valid_acc 0.67406217 | valid_f1 [0.82304629 0.47652348 0.62554585 0.7404812  0.77961019] | valid_avg_f1 0.68904140 |valid_macro_f1 0.68904140 | valid_auc 0.83230410
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 24 ] time: 271.46s | train_avg_loss 0.54166828 | valid_avg_loss 0.69540692 | valid_acc 0.63579850 | valid_f1 [0.76941332 0.45038787 0.60220067 0.68629442 0.76417691] | valid_avg_f1 0.65449464 |valid_macro_f1 0.65449464 | valid_auc 0.81501385
+[ FOLD 0 ] [ EPOCH 25 ] time: 269.99s | train_avg_loss 0.53720260 | valid_avg_loss 0.94121480 | valid_acc 0.66404073 | valid_f1 [0.81956394 0.39556199 0.63733461 0.58172375 0.77031093] | valid_avg_f1 0.64089904 |valid_macro_f1 0.64089904 | valid_auc 0.80405747
+[ FOLD 0 ] [ EPOCH 26 ] time: 268.71s | train_avg_loss 0.53441679 | valid_avg_loss 0.66868924 | valid_acc 0.68429796 | valid_f1 [0.85084785 0.48260171 0.62111346 0.68794624 0.81755531] | valid_avg_f1 0.69201291 |valid_macro_f1 0.69201291 | valid_auc 0.83641561
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 27 ] time: 271.16s | train_avg_loss 0.53885960 | valid_avg_loss 0.77154789 | valid_acc 0.66184352 | valid_f1 [0.80246002 0.44086022 0.65821266 0.69460598 0.72603259] | valid_avg_f1 0.66443429 |valid_macro_f1 0.66443429 | valid_auc 0.81483215
+[ FOLD 0 ] [ EPOCH 28 ] time: 275.38s | train_avg_loss 0.52936213 | valid_avg_loss 0.71104985 | valid_acc 0.70557342 | valid_f1 [0.85704412 0.4903247  0.67451931 0.6811071  0.7851556 ] | valid_avg_f1 0.69763017 |valid_macro_f1 0.69763017 | valid_auc 0.84026084
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 29 ] time: 272.31s | train_avg_loss 0.52264417 | valid_avg_loss 0.77966808 | valid_acc 0.71629153 | valid_f1 [0.80795996 0.47758124 0.73550412 0.73458824 0.72827283] | valid_avg_f1 0.69678128 |valid_macro_f1 0.69678128 | valid_auc 0.83109962
+[ FOLD 0 ] [ EPOCH 30 ] time: 270.11s | train_avg_loss 0.52362319 | valid_avg_loss 1.20053788 | valid_acc 0.57052519 | valid_f1 [0.77590161 0.36199953 0.48925972 0.48781141 0.66331448] | valid_avg_f1 0.55565735 |valid_macro_f1 0.55565735 | valid_auc 0.75437259
+[ FOLD 0 ] [ EPOCH 31 ] time: 266.83s | train_avg_loss 0.52405048 | valid_avg_loss 0.64530001 | valid_acc 0.65750268 | valid_f1 [0.8051053  0.47033441 0.59550774 0.70776921 0.80034813] | valid_avg_f1 0.67581296 |valid_macro_f1 0.67581296 | valid_auc 0.83055829
+[ FOLD 0 ] [ EPOCH 32 ] time: 266.20s | train_avg_loss 0.51489348 | valid_avg_loss 0.64093765 | valid_acc 0.67143623 | valid_f1 [0.8085429  0.48608484 0.61601035 0.70426065 0.78543522] | valid_avg_f1 0.68006680 |valid_macro_f1 0.68006680 | valid_auc 0.83534009
+[ FOLD 0 ] [ EPOCH 33 ] time: 263.29s | train_avg_loss 0.51570208 | valid_avg_loss 0.78926039 | valid_acc 0.66446945 | valid_f1 [0.81513002 0.4706062  0.62710519 0.63774648 0.76386182] | valid_avg_f1 0.66288994 |valid_macro_f1 0.66288994 | valid_auc 0.81933198
+[ FOLD 0 ] [ EPOCH 34 ] time: 270.85s | train_avg_loss 0.50665806 | valid_avg_loss 0.83228132 | valid_acc 0.63729904 | valid_f1 [0.8104361  0.46597498 0.57581609 0.59378673 0.75008331] | valid_avg_f1 0.63921944 |valid_macro_f1 0.63921944 | valid_auc 0.81213779
+[ FOLD 0 ] [ EPOCH 35 ] time: 264.37s | train_avg_loss 0.51321398 | valid_avg_loss 0.77736441 | valid_acc 0.68258307 | valid_f1 [0.83343997 0.45209672 0.64596491 0.73015873 0.73591238] | valid_avg_f1 0.67951454 |valid_macro_f1 0.67951454 | valid_auc 0.82141181
+[ FOLD 0 ] [ EPOCH 36 ] time: 267.06s | train_avg_loss 0.49437249 | valid_avg_loss 0.64819816 | valid_acc 0.68794212 | valid_f1 [0.8340708  0.49228313 0.64428571 0.70659181 0.80827001] | valid_avg_f1 0.69710029 |valid_macro_f1 0.69710029 | valid_auc 0.84005896
+[ FOLD 0 ] [ EPOCH 37 ] time: 268.71s | train_avg_loss 0.50183311 | valid_avg_loss 0.73617500 | valid_acc 0.69099678 | valid_f1 [0.82888759 0.47946977 0.66440563 0.68715789 0.76702748] | valid_avg_f1 0.68538967 |valid_macro_f1 0.68538967 | valid_auc 0.82865890
+[ FOLD 0 ] [ EPOCH 38 ] time: 268.62s | train_avg_loss 0.49809008 | valid_avg_loss 0.63785389 | valid_acc 0.67942122 | valid_f1 [0.84474284 0.48520098 0.60692616 0.70521684 0.81445448] | valid_avg_f1 0.69130826 |valid_macro_f1 0.69130826 | valid_auc 0.83938955
+[ FOLD 0 ] [ EPOCH 39 ] time: 266.71s | train_avg_loss 0.48755512 | valid_avg_loss 0.73552298 | valid_acc 0.64705252 | valid_f1 [0.721004   0.46433602 0.64202161 0.68       0.77610955] | valid_avg_f1 0.65669424 |valid_macro_f1 0.65669424 | valid_auc 0.81904625
+[ FOLD 0 ] [ EPOCH 40 ] time: 273.13s | train_avg_loss 0.48964915 | valid_avg_loss 0.67256154 | valid_acc 0.69346195 | valid_f1 [0.82884406 0.49719465 0.65247472 0.72718698 0.77901141] | valid_avg_f1 0.69694236 |valid_macro_f1 0.69694236 | valid_auc 0.83815827
+[ FOLD 0 ] [ EPOCH 41 ] time: 274.19s | train_avg_loss 0.48896080 | valid_avg_loss 0.69547362 | valid_acc 0.64222937 | valid_f1 [0.8019874  0.49437277 0.54332645 0.64011098 0.76023748] | valid_avg_f1 0.64800701 |valid_macro_f1 0.64800701 | valid_auc 0.82197758
+[ FOLD 0 ] [ EPOCH 42 ] time: 273.69s | train_avg_loss 0.47632715 | valid_avg_loss 0.68078488 | valid_acc 0.66130761 | valid_f1 [0.84106355 0.47694335 0.57611685 0.65617201 0.80736899] | valid_avg_f1 0.67153295 |valid_macro_f1 0.67153295 | valid_auc 0.82979879
+[ FOLD 0 ] [ EPOCH 43 ] time: 271.41s | train_avg_loss 0.48441901 | valid_avg_loss 0.74024878 | valid_acc 0.65321543 | valid_f1 [0.83339339 0.48105577 0.5772426  0.60456339 0.80318165] | valid_avg_f1 0.65988736 |valid_macro_f1 0.65988736 | valid_auc 0.82317979
+[ FOLD 0 ] [ EPOCH 44 ] time: 272.35s | train_avg_loss 0.47801106 | valid_avg_loss 1.04511178 | valid_acc 0.63161844 | valid_f1 [0.73832884 0.38266695 0.61161135 0.58095407 0.75201072] | valid_avg_f1 0.61311439 |valid_macro_f1 0.61311439 | valid_auc 0.78679595
+[ FOLD 0 ] [ EPOCH 45 ] time: 273.70s | train_avg_loss 0.47358682 | valid_avg_loss 0.70695797 | valid_acc 0.65782422 | valid_f1 [0.82941034 0.4602093  0.59430071 0.7065453  0.77662245] | valid_avg_f1 0.67341762 |valid_macro_f1 0.67341762 | valid_auc 0.82478532
+[ FOLD 0 ] [ EPOCH 46 ] time: 268.35s | train_avg_loss 0.47957187 | valid_avg_loss 0.76263169 | valid_acc 0.67883173 | valid_f1 [0.84468353 0.49983782 0.61704229 0.58619481 0.83524767] | valid_avg_f1 0.67660122 |valid_macro_f1 0.67660122 | valid_auc 0.82953017
+[ FOLD 0 ] [ EPOCH 47 ] time: 268.80s | train_avg_loss 0.47407674 | valid_avg_loss 0.83135368 | valid_acc 0.67041801 | valid_f1 [0.82863905 0.46541502 0.63519167 0.63084541 0.765625  ] | valid_avg_f1 0.66514323 |valid_macro_f1 0.66514323 | valid_auc 0.81880883
+[ FOLD 0 ] [ EPOCH 48 ] time: 269.28s | train_avg_loss 0.47531071 | valid_avg_loss 0.81599550 | valid_acc 0.64303323 | valid_f1 [0.76167854 0.46697248 0.60813325 0.59375527 0.79966611] | valid_avg_f1 0.64604113 |valid_macro_f1 0.64604113 | valid_auc 0.81426864
+===============begin fold 0 test===============
+test_all_time: 8.98159646987915
+the f1:[0.84625494 0.46118242 0.66399294 0.64084923 0.7783802 ]
+the average f1 is: 0.6781319379806519
+Normalized confusion matrix
+the accuracy of every classes:[0.8, 0.54, 0.57, 0.9, 0.82]
+[[7.98550172e-01 1.18657001e-01 1.22090805e-02 3.24303701e-03
+  6.73407097e-02]
+ [5.28656126e-02 5.41501976e-01 3.14229249e-01 2.51976285e-02
+  6.62055336e-02]
+ [2.54573171e-02 1.13414634e-01 5.67835366e-01 2.39024390e-01
+  5.42682927e-02]
+ [0.00000000e+00 1.42857143e-02 8.95604396e-02 8.95604396e-01
+  5.49450549e-04]
+ [6.64578984e-02 8.38552540e-02 2.50521921e-02 3.47947112e-04
+  8.24286708e-01]]
+Confusion matrix, without normalization
+[[4186  622   64   17  353]
+ [ 107 1096  636   51  134]
+ [ 167  744 3725 1568  356]
+ [   0   26  163 1630    1]
+ [ 191  241   72    1 2369]]
+[ FOLD 0 ] end of test | test_avg_f1 0.67813194 | test_avg_loss 0.76076299 | test_acc 0.70226782 | test_macro_f1 0.67813192 | test_auc 0.82636199
+test_all_time: 8.98159646987915
+[2025-06-13 07:58:58] INFO (nni/MainThread) Intermediate result: 0.6781319379806519  (Index 0)
+===============k fold mean result===============
+[ ALLFOLD ] kfold_mean_marco_f1:  0.67813194
+[ ALLFOLD ] kfold_mean_macro_macro_f1:  0.6781319173298102
+[ ALLFOLD ] kfold_mean_acc:  0.702267818574514
+[ ALLFOLD ] kfold_mean_auc:  0.8263619878467148
+
+
+[ ALLFOLD ] allcm_acc:  0.702267818574514
+[ FDM ] allcm_Sensitivity:  0.7255557235706307
+[ FDM ] allcm_Specificity:  0.9271682521227987
+[ FDM ] allcm_Macro-F1:  0.6781319173298102
+[ FDM ] allcm_kappa:  0.6180124342093598
+[ FDM ] allcm_BaAcc:  0.7255557235706307
+[ FDM ] allcm_AUROC:  nan
+[ FDM ] allcm_AUCPR:  nan
+
+
+Normalized confusion matrix
+the accuracy of every classes:[0.8, 0.54, 0.57, 0.9, 0.82]
+[[7.98550172e-01 1.18657001e-01 1.22090805e-02 3.24303701e-03
+  6.73407097e-02]
+ [5.28656126e-02 5.41501976e-01 3.14229249e-01 2.51976285e-02
+  6.62055336e-02]
+ [2.54573171e-02 1.13414634e-01 5.67835366e-01 2.39024390e-01
+  5.42682927e-02]
+ [0.00000000e+00 1.42857143e-02 8.95604396e-02 8.95604396e-01
+  5.49450549e-04]
+ [6.64578984e-02 8.38552540e-02 2.50521921e-02 3.47947112e-04
+  8.24286708e-01]]
+Confusion matrix, without normalization
+[[4186  622   64   17  353]
+ [ 107 1096  636   51  134]
+ [ 167  744 3725 1568  356]
+ [   0   26  163 1630    1]
+ [ 191  241   72    1 2369]]
+[ ALLFOLD ] kfold_mirco_f1:  [0.84625494 0.46118242 0.66399294 0.64084923 0.7783802 ]
+[ ALLFOLD ] kfold_mean_mirco_f1:  0.67813194
+[2025-06-13 07:59:00] INFO (nni/MainThread) Final result: 0.6781319379806519
+===============all time cost: 18019.081472873688===============

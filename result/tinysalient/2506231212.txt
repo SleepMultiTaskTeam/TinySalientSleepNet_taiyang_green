@@ -1,0 +1,771 @@
+==========some new opts changed:==========
+==========all opts:==========
+seed: 43
+kfold_num: 1
+input_epoch_num: 60
+freq: 100
+batch_size: 8
+num_epochs: 200
+stop_patience: 20
+learning_rate: 0.003
+weight_decay: 0
+dropout_rate: 0
+beta_1: 0.9
+beta_2: 0.999
+weight: tensor([ 1., 10.,  1.,  6.,  6.])
+train_val_cutrate: 0.8
+test_size: 0.1
+val_size: 0.1
+test_dataset: self
+model_dir: None
+data_dir: D:\dataset\SHHS\SHHS1
+ISRUC1_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/
+ISRUC3_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/
+MASS_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/
+SHHS_dir: ../../Datasets/shhs1_process6
+SLEEPEDF153_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs
+taiyang_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2
+ccshs_dir: /mnt/nfsData17/JiaQianru/dataset/ccshs/polysomnography
+cfs_dir: /mnt/nfsData17/JiaQianru/dataset/cfs/polysomnography
+homepap_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/homepap/polysomnography
+composite_dir: /mnt/nfsData18/ZhangShaoqi/CODES/SSSC_1/result/composite_dataset
+dataset: ['ISRUC1', 'ISRUC3', 'MASS', 'SLEEPEDF153']
+ISRUC1_channel: ['C3_A2', 'O1_A2', 'LOC_A2']
+ISRUC1_channel2: ['C4_A1', 'O2_A1', 'ROC_A1']
+ISRUC3_channel: ['C3_A2', 'O1_A2', 'LOC_A2']
+ISRUC3_channel2: ['C4_A1', 'O2_A1', 'ROC_A1']
+MASS_channel: ['C3', 'O1', 'EogL']
+MASS_channel2: ['C4', 'O2', 'EogR']
+SHHS_channel: ['EEG', 'EEG(sec)', 'EOG(L)', 'EMG']
+SLEEPEDF153_channel: ['Fpz-Cz', 'Pz-Oz', 'EOG']
+SLEEPEDF153_channel2: ['Fpz-Cz', 'Pz-Oz', 'EOG']
+taiyang_channel: ['EEG C3-REF', 'EEG O1-REF', 'EOG1']
+ccshs_channel: ['C4', 'ROC']
+cfs_channel: ['C4', 'ROC']
+homepap_channel: ['C3', 'O1', 'E1']
+homepap_channel2: ['C4', 'O2', 'E2']
+yasa_feature: False
+save_dir: ./result/tinysalient/test_doubledata/
+save_model_name: model.pkl
+testonly: False
+JXY_shhs1-300_dir: /mnt/nfsData19/ZhangShaoqi/DATASETS/shhs_processed/shhs1
+JXY_shhs1-300_channel: ['C3', 'C4', 'EMG', 'EOG(L)', 'EOG(R)', 'ECG', 'Airflow', 'Sp02']
+JXY_out_dim: 5
+model_select: TinySalientSleepNet
+task: sleep_stage_classification
+data_double: True
+train_num:  80 val_num:  10 test_num:  10
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject1.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject10.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject100.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject11.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject12.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject13.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject14.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject15.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject16.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject17.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject18.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject19.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject2.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject20.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject21.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject22.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject23.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject24.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject25.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject26.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject27.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject28.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject29.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject3.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject30.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject31.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject32.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject33.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject34.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject35.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject36.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject37.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject38.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject39.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject4.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject40.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject41.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject42.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject43.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject44.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject45.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject46.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject47.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject48.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject49.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject5.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject50.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject51.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject52.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject53.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject54.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject55.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject56.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject57.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject58.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject59.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject6.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject60.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject61.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject62.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject63.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject64.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject65.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject66.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject67.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject68.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject69.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject7.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject70.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject71.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject72.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject73.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject74.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject75.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject76.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject77.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject78.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject79.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject8.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject80.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject81.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject82.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject83.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject84.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject85.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject86.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject87.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject88.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject89.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject9.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject90.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject91.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject92.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject93.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject94.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject95.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject96.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject97.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject98.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject99.mat
+train_num:  80 val_num:  10 test_num:  10
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject1.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject10.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject100.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject11.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject12.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject13.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject14.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject15.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject16.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject17.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject18.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject19.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject2.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject20.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject21.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject22.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject23.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject24.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject25.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject26.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject27.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject28.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject29.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject3.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject30.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject31.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject32.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject33.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject34.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject35.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject36.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject37.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject38.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject39.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject4.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject40.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject41.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject42.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject43.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject44.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject45.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject46.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject47.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject48.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject49.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject5.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject50.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject51.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject52.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject53.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject54.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject55.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject56.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject57.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject58.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject59.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject6.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject60.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject61.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject62.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject63.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject64.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject65.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject66.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject67.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject68.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject69.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject7.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject70.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject71.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject72.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject73.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject74.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject75.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject76.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject77.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject78.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject79.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject8.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject80.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject81.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject82.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject83.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject84.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject85.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject86.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject87.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject88.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject89.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject9.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject90.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject91.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject92.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject93.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject94.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject95.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject96.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject97.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject98.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/subject99.mat
+train_num:  8 val_num:  1 test_num:  1
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject1.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject10.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject2.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject3.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject4.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject5.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject6.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject7.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject8.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject9.mat
+train_num:  8 val_num:  1 test_num:  1
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject1.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject10.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject2.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject3.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject4.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject5.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject6.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject7.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject8.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/subject9.mat
+train_num:  50 val_num:  6 test_num:  6
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0001-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0002-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0003-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0004-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0005-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0006-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0007-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0008-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0009-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0010-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0011-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0012-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0013-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0014-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0015-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0016-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0017-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0018-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0019-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0020-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0021-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0022-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0023-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0024-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0025-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0026-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0027-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0028-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0029-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0030-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0031-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0032-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0033-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0034-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0035-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0036-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0037-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0038-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0039-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0040-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0041-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0042-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0044-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0045-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0046-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0047-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0048-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0050-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0051-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0052-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0053-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0054-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0055-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0056-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0057-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0058-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0059-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0060-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0061-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0062-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0063-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0064-Datasub.mat
+train_num:  50 val_num:  6 test_num:  6
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0001-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0002-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0003-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0004-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0005-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0006-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0007-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0008-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0009-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0010-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0011-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0012-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0013-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0014-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0015-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0016-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0017-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0018-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0019-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0020-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0021-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0022-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0023-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0024-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0025-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0026-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0027-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0028-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0029-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0030-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0031-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0032-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0033-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0034-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0035-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0036-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0037-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0038-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0039-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0040-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0041-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0042-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0044-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0045-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0046-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0047-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0048-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0050-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0051-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0052-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0053-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0054-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0055-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0056-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0057-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0058-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0059-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0060-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0061-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0062-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0063-Datasub.mat
+/mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/01-03-0064-Datasub.mat
+train_num:  123 val_num:  15 test_num:  15
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4001E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4002E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4011E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4012E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4021E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4022E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4031E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4032E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4041E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4042E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4051E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4052E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4061E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4062E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4071E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4072E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4081E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4082E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4091E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4092E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4101E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4102E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4111E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4112E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4121E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4122E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4131E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4141E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4142E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4151E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4152E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4161E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4162E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4171E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4172E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4181E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4182E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4191E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4192E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4201E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4202E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4211E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4212E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4221E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4222E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4231E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4232E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4241E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4242E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4251E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4252E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4261F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4262F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4271F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4272F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4281G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4282G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4291G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4292G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4301E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4302E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4311E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4312E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4321E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4322E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4331F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4332F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4341F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4342F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4351F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4352F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4362F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4371F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4372F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4381F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4382F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4401E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4402E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4411E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4412E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4421E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4422E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4431E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4432E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4441E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4442E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4451F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4452F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4461F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4462F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4471F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4472F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4481F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4482F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4491G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4492G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4501E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4502E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4511E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4512E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4522E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4531E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4532E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4541F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4542F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4551F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4552F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4561F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4562F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4571F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4572F0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4581G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4582G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4591G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4592G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4601E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4602E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4611E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4612E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4621E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4622E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4631E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4632E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4641E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4642E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4651E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4652E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4661E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4662E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4671G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4672G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4701E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4702E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4711E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4712E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4721E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4722E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4731E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4732E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4741E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4742E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4751E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4752E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4761E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4762E0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4771G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4772G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4801G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4802G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4811G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4812G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4821G0.npz
+/mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs/SC4822G0.npz
+load data finish
+===============gen train:val:test data===============
+train data shape:  6363
+val data shape:  937
+test data shape:  878
+===============begin fold 0 train===============
+[ FOLD 0 ] [ EPOCH  1 ] time: 302.25s | train_avg_loss 0.91211895 | valid_avg_loss 0.85693922 | valid_acc 0.47171825 | valid_f1 [0.67049539 0.33194486 0.3740229  0.76778094 0.38432516] | valid_avg_f1 0.50571385 |valid_macro_f1 0.50571385 | valid_auc 0.71375639
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  2 ] time: 331.69s | train_avg_loss 0.73428922 | valid_avg_loss 0.88347939 | valid_acc 0.53379580 | valid_f1 [0.83403603 0.34731304 0.29840694 0.75662723 0.36120548] | valid_avg_f1 0.51951774 |valid_macro_f1 0.51951774 | valid_auc 0.73939729
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  3 ] time: 302.25s | train_avg_loss 0.65821306 | valid_avg_loss 0.64829776 | valid_acc 0.63178584 | valid_f1 [0.83990453 0.42340702 0.51710637 0.74640275 0.61763089] | valid_avg_f1 0.62889031 |valid_macro_f1 0.62889031 | valid_auc 0.80931001
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  4 ] time: 322.41s | train_avg_loss 0.61715047 | valid_avg_loss 0.63700830 | valid_acc 0.63374244 | valid_f1 [0.74809428 0.4224897  0.63107893 0.78166783 0.64246846] | valid_avg_f1 0.64515984 |valid_macro_f1 0.64515984 | valid_auc 0.81029427
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  5 ] time: 335.08s | train_avg_loss 0.59798513 | valid_avg_loss 0.59752904 | valid_acc 0.63760228 | valid_f1 [0.82562923 0.43553925 0.54312566 0.74025884 0.6730783 ] | valid_avg_f1 0.64352626 |valid_macro_f1 0.64352626 | valid_auc 0.81480629
+[ FOLD 0 ] [ EPOCH  6 ] time: 307.65s | train_avg_loss 0.58372514 | valid_avg_loss 0.60140117 | valid_acc 0.62671647 | valid_f1 [0.85771505 0.4647857  0.45777158 0.64039693 0.66218226] | valid_avg_f1 0.61657030 |valid_macro_f1 0.61657030 | valid_auc 0.81162125
+[ FOLD 0 ] [ EPOCH  7 ] time: 256.70s | train_avg_loss 0.55990385 | valid_avg_loss 0.60642503 | valid_acc 0.68425827 | valid_f1 [0.81445958 0.44923047 0.67583895 0.77259908 0.68397058] | valid_avg_f1 0.67921973 |valid_macro_f1 0.67921973 | valid_auc 0.83188180
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH  8 ] time: 256.37s | train_avg_loss 0.55433982 | valid_avg_loss 0.65065021 | valid_acc 0.57975809 | valid_f1 [0.69932383 0.41873759 0.51235024 0.67914808 0.64086198] | valid_avg_f1 0.59008434 |valid_macro_f1 0.59008434 | valid_auc 0.79592283
+[ FOLD 0 ] [ EPOCH  9 ] time: 257.42s | train_avg_loss 0.54296895 | valid_avg_loss 0.55706531 | valid_acc 0.71947705 | valid_f1 [0.89709099 0.49204038 0.65370547 0.72204559 0.75930946] | valid_avg_f1 0.70483838 |valid_macro_f1 0.70483838 | valid_auc 0.84847899
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 10 ] time: 259.31s | train_avg_loss 0.53392371 | valid_avg_loss 0.55444352 | valid_acc 0.65686588 | valid_f1 [0.86901598 0.4751568  0.50855052 0.72549284 0.67248535] | valid_avg_f1 0.65014030 |valid_macro_f1 0.65014030 | valid_auc 0.82974866
+[ FOLD 0 ] [ EPOCH 11 ] time: 256.65s | train_avg_loss 0.51729175 | valid_avg_loss 0.56129810 | valid_acc 0.68422270 | valid_f1 [0.85122616 0.47454335 0.61558424 0.76193943 0.70032534] | valid_avg_f1 0.68072370 |valid_macro_f1 0.68072370 | valid_auc 0.83973141
+[ FOLD 0 ] [ EPOCH 12 ] time: 257.52s | train_avg_loss 0.51234514 | valid_avg_loss 0.56140128 | valid_acc 0.66286019 | valid_f1 [0.85670439 0.48501923 0.55782752 0.64543721 0.74678805] | valid_avg_f1 0.65835528 |valid_macro_f1 0.65835528 | valid_auc 0.83097323
+[ FOLD 0 ] [ EPOCH 13 ] time: 256.92s | train_avg_loss 0.51629410 | valid_avg_loss 0.59988114 | valid_acc 0.65140519 | valid_f1 [0.8859028  0.45439579 0.49308756 0.68577853 0.70307988] | valid_avg_f1 0.64444891 |valid_macro_f1 0.64444891 | valid_auc 0.81931277
+[ FOLD 0 ] [ EPOCH 14 ] time: 257.04s | train_avg_loss 0.51144163 | valid_avg_loss 0.55877807 | valid_acc 0.72086446 | valid_f1 [0.89532308 0.49535232 0.64975526 0.76771476 0.73913861] | valid_avg_f1 0.70945681 |valid_macro_f1 0.70945681 | valid_auc 0.85261697
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 15 ] time: 258.04s | train_avg_loss 0.49690684 | valid_avg_loss 0.52819767 | valid_acc 0.64948417 | valid_f1 [0.82938684 0.44521179 0.54621788 0.75265841 0.73755749] | valid_avg_f1 0.66220648 |valid_macro_f1 0.66220648 | valid_auc 0.82659990
+[ FOLD 0 ] [ EPOCH 16 ] time: 256.16s | train_avg_loss 0.49216988 | valid_avg_loss 0.64353350 | valid_acc 0.60190324 | valid_f1 [0.88639676 0.38919136 0.3209425  0.75317328 0.71627104] | valid_avg_f1 0.61319499 |valid_macro_f1 0.61319499 | valid_auc 0.79629034
+[ FOLD 0 ] [ EPOCH 17 ] time: 257.35s | train_avg_loss 0.49148430 | valid_avg_loss 0.52470982 | valid_acc 0.67758805 | valid_f1 [0.86475746 0.46185005 0.5878896  0.74664136 0.77332498] | valid_avg_f1 0.68689269 |valid_macro_f1 0.68689269 | valid_auc 0.83442588
+[ FOLD 0 ] [ EPOCH 18 ] time: 255.86s | train_avg_loss 0.47736254 | valid_avg_loss 0.52257701 | valid_acc 0.65613661 | valid_f1 [0.86876946 0.47454441 0.50674301 0.68416816 0.74491463] | valid_avg_f1 0.65582793 |valid_macro_f1 0.65582793 | valid_auc 0.83078736
+[ FOLD 0 ] [ EPOCH 19 ] time: 256.23s | train_avg_loss 0.47786748 | valid_avg_loss 0.51357162 | valid_acc 0.70273924 | valid_f1 [0.89651624 0.48861007 0.60019408 0.73486516 0.76941263] | valid_avg_f1 0.69791964 |valid_macro_f1 0.69791964 | valid_auc 0.84637214
+[ FOLD 0 ] [ EPOCH 20 ] time: 255.39s | train_avg_loss 0.47009126 | valid_avg_loss 0.55813159 | valid_acc 0.69564212 | valid_f1 [0.89595899 0.48934127 0.5779145  0.75054042 0.70926165] | valid_avg_f1 0.68460337 |valid_macro_f1 0.68460337 | valid_auc 0.84407342
+[ FOLD 0 ] [ EPOCH 21 ] time: 256.72s | train_avg_loss 0.47202542 | valid_avg_loss 0.52666204 | valid_acc 0.66965493 | valid_f1 [0.89935488 0.44906508 0.5127262  0.76735518 0.76255917] | valid_avg_f1 0.67821210 |valid_macro_f1 0.67821210 | valid_auc 0.82984477
+[ FOLD 0 ] [ EPOCH 22 ] time: 256.34s | train_avg_loss 0.46344050 | valid_avg_loss 0.49162113 | valid_acc 0.71970829 | valid_f1 [0.88322506 0.50465783 0.66300115 0.75769118 0.77468686] | valid_avg_f1 0.71665242 |valid_macro_f1 0.71665242 | valid_auc 0.85332598
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 23 ] time: 256.15s | train_avg_loss 0.45879158 | valid_avg_loss 0.49498986 | valid_acc 0.70220562 | valid_f1 [0.88348399 0.50642332 0.61886226 0.69409683 0.79395145] | valid_avg_f1 0.69936357 |valid_macro_f1 0.69936357 | valid_auc 0.84770498
+[ FOLD 0 ] [ EPOCH 24 ] time: 256.17s | train_avg_loss 0.45685963 | valid_avg_loss 0.49814097 | valid_acc 0.70549626 | valid_f1 [0.88019636 0.49883188 0.63789516 0.73035083 0.76903593] | valid_avg_f1 0.70326203 |valid_macro_f1 0.70326203 | valid_auc 0.84657066
+[ FOLD 0 ] [ EPOCH 25 ] time: 255.24s | train_avg_loss 0.44875049 | valid_avg_loss 0.48796967 | valid_acc 0.65971185 | valid_f1 [0.86797815 0.47418615 0.49621155 0.73903224 0.73828204] | valid_avg_f1 0.66313802 |valid_macro_f1 0.66313802 | valid_auc 0.83645792
+[ FOLD 0 ] [ EPOCH 26 ] time: 255.60s | train_avg_loss 0.45216281 | valid_avg_loss 0.50667701 | valid_acc 0.68287086 | valid_f1 [0.84916597 0.49593423 0.59103641 0.69909444 0.77576081] | valid_avg_f1 0.68219837 |valid_macro_f1 0.68219837 | valid_auc 0.84534579
+[ FOLD 0 ] [ EPOCH 27 ] time: 300.33s | train_avg_loss 0.44814521 | valid_avg_loss 0.49206355 | valid_acc 0.69576663 | valid_f1 [0.87950419 0.49189845 0.59648266 0.73249846 0.77550436] | valid_avg_f1 0.69517762 |valid_macro_f1 0.69517762 | valid_auc 0.84748265
+[ FOLD 0 ] [ EPOCH 28 ] time: 341.50s | train_avg_loss 0.43968535 | valid_avg_loss 0.48505104 | valid_acc 0.71026325 | valid_f1 [0.86109521 0.50143863 0.64747242 0.73682749 0.81578383] | valid_avg_f1 0.71252352 |valid_macro_f1 0.71252352 | valid_auc 0.85520137
+[ FOLD 0 ] [ EPOCH 29 ] time: 363.68s | train_avg_loss 0.44778871 | valid_avg_loss 0.48906026 | valid_acc 0.70912487 | valid_f1 [0.845284   0.49986706 0.67547353 0.73994713 0.79028505] | valid_avg_f1 0.71017135 |valid_macro_f1 0.71017135 | valid_auc 0.85153536
+[ FOLD 0 ] [ EPOCH 30 ] time: 265.26s | train_avg_loss 0.43572032 | valid_avg_loss 0.50308534 | valid_acc 0.67970473 | valid_f1 [0.87039008 0.49039597 0.55219124 0.72219981 0.75387559] | valid_avg_f1 0.67781054 |valid_macro_f1 0.67781054 | valid_auc 0.84352712
+[ FOLD 0 ] [ EPOCH 31 ] time: 256.51s | train_avg_loss 0.43473074 | valid_avg_loss 0.48188980 | valid_acc 0.69580221 | valid_f1 [0.85657676 0.5023341  0.62512317 0.69901431 0.80544717] | valid_avg_f1 0.69769910 |valid_macro_f1 0.69769910 | valid_auc 0.84801731
+[ FOLD 0 ] [ EPOCH 32 ] time: 256.90s | train_avg_loss 0.43264902 | valid_avg_loss 0.53705740 | valid_acc 0.68376023 | valid_f1 [0.9027538  0.44543094 0.5173539  0.78114226 0.78289894] | valid_avg_f1 0.68591597 |valid_macro_f1 0.68591597 | valid_auc 0.83877134
+[ FOLD 0 ] [ EPOCH 33 ] time: 256.04s | train_avg_loss 0.43232869 | valid_avg_loss 0.51176140 | valid_acc 0.65104945 | valid_f1 [0.88387176 0.46747063 0.46145469 0.69285669 0.75790943] | valid_avg_f1 0.65271264 |valid_macro_f1 0.65271264 | valid_auc 0.82886809
+[ FOLD 0 ] [ EPOCH 34 ] time: 257.72s | train_avg_loss 0.42824405 | valid_avg_loss 0.49628544 | valid_acc 0.72068659 | valid_f1 [0.89300336 0.51452519 0.64155723 0.76571258 0.7507339 ] | valid_avg_f1 0.71310645 |valid_macro_f1 0.71310645 | valid_auc 0.85556223
+[ FOLD 0 ] [ EPOCH 35 ] time: 258.93s | train_avg_loss 0.42676764 | valid_avg_loss 0.50513307 | valid_acc 0.70206332 | valid_f1 [0.86094225 0.50331313 0.62836128 0.71178952 0.78541431] | valid_avg_f1 0.69796410 |valid_macro_f1 0.69796410 | valid_auc 0.85096898
+[ FOLD 0 ] [ EPOCH 36 ] time: 257.23s | train_avg_loss 0.42414913 | valid_avg_loss 0.51008714 | valid_acc 0.67340804 | valid_f1 [0.85773538 0.459105   0.55553962 0.77841615 0.77560171] | valid_avg_f1 0.68527957 |valid_macro_f1 0.68527957 | valid_auc 0.83967677
+[ FOLD 0 ] [ EPOCH 37 ] time: 257.30s | train_avg_loss 0.42111881 | valid_avg_loss 0.48996267 | valid_acc 0.68568125 | valid_f1 [0.86772886 0.46387984 0.58184873 0.77061262 0.80470554] | valid_avg_f1 0.69775512 |valid_macro_f1 0.69775512 | valid_auc 0.84217088
+[ FOLD 0 ] [ EPOCH 38 ] time: 256.00s | train_avg_loss 0.41383521 | valid_avg_loss 0.48622146 | valid_acc 0.71639986 | valid_f1 [0.88078131 0.50577722 0.64715048 0.74218415 0.79584527] | valid_avg_f1 0.71434769 |valid_macro_f1 0.71434769 | valid_auc 0.85443478
+[ FOLD 0 ] [ EPOCH 39 ] time: 256.87s | train_avg_loss 0.41479725 | valid_avg_loss 0.48181417 | valid_acc 0.69742085 | valid_f1 [0.86884213 0.50365763 0.61262129 0.70039964 0.80273952] | valid_avg_f1 0.69765204 |valid_macro_f1 0.69765204 | valid_auc 0.84875452
+[ FOLD 0 ] [ EPOCH 40 ] time: 362.45s | train_avg_loss 0.41252065 | valid_avg_loss 0.47130791 | valid_acc 0.71440768 | valid_f1 [0.84744117 0.500043   0.67691314 0.75311323 0.82564596] | valid_avg_f1 0.72063130 |valid_macro_f1 0.72063130 | valid_auc 0.85535533
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 41 ] time: 270.42s | train_avg_loss 0.40967321 | valid_avg_loss 0.52107862 | valid_acc 0.70361081 | valid_f1 [0.91195136 0.49636771 0.56264691 0.73800846 0.76838285] | valid_avg_f1 0.69547146 |valid_macro_f1 0.69547146 | valid_auc 0.84824271
+[ FOLD 0 ] [ EPOCH 42 ] time: 364.25s | train_avg_loss 0.41093142 | valid_avg_loss 0.48038143 | valid_acc 0.71689790 | valid_f1 [0.85549577 0.50402488 0.66782041 0.75062504 0.80907116] | valid_avg_f1 0.71740745 |valid_macro_f1 0.71740745 | valid_auc 0.85820969
+[ FOLD 0 ] [ EPOCH 43 ] time: 367.18s | train_avg_loss 0.40879240 | valid_avg_loss 0.50447467 | valid_acc 0.66104589 | valid_f1 [0.89438079 0.44401619 0.4528932  0.77072376 0.78946639] | valid_avg_f1 0.67029607 |valid_macro_f1 0.67029607 | valid_auc 0.83559558
+[ FOLD 0 ] [ EPOCH 44 ] time: 317.17s | train_avg_loss 0.40589536 | valid_avg_loss 0.47894914 | valid_acc 0.71880114 | valid_f1 [0.87606771 0.49637494 0.66491975 0.76810307 0.80220029] | valid_avg_f1 0.72153315 |valid_macro_f1 0.72153315 | valid_auc 0.85420329
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 45 ] time: 368.34s | train_avg_loss 0.39908504 | valid_avg_loss 0.47071376 | valid_acc 0.72182497 | valid_f1 [0.88459158 0.51301253 0.64824406 0.74145606 0.80578838] | valid_avg_f1 0.71861852 |valid_macro_f1 0.71861852 | valid_auc 0.85958801
+[ FOLD 0 ] [ EPOCH 46 ] time: 321.37s | train_avg_loss 0.40173808 | valid_avg_loss 0.49953544 | valid_acc 0.73706866 | valid_f1 [0.85833786 0.51803214 0.71854854 0.79070905 0.77595009] | valid_avg_f1 0.73231553 |valid_macro_f1 0.73231553 | valid_auc 0.86105994
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 47 ] time: 258.35s | train_avg_loss 0.40831294 | valid_avg_loss 0.46835541 | valid_acc 0.67541800 | valid_f1 [0.84118889 0.48849198 0.57460532 0.70468882 0.8138713 ] | valid_avg_f1 0.68456926 |valid_macro_f1 0.68456926 | valid_auc 0.84396928
+[ FOLD 0 ] [ EPOCH 48 ] time: 256.92s | train_avg_loss 0.40148373 | valid_avg_loss 0.52151500 | valid_acc 0.69112416 | valid_f1 [0.89540949 0.49253029 0.56374293 0.79763232 0.71311424] | valid_avg_f1 0.69248585 |valid_macro_f1 0.69248585 | valid_auc 0.84051421
+[ FOLD 0 ] [ EPOCH 49 ] time: 257.88s | train_avg_loss 0.39647738 | valid_avg_loss 0.48622225 | valid_acc 0.71358947 | valid_f1 [0.89286478 0.49100968 0.61839464 0.7774686  0.80201947] | valid_avg_f1 0.71635143 |valid_macro_f1 0.71635143 | valid_auc 0.85392447
+[ FOLD 0 ] [ EPOCH 50 ] time: 259.25s | train_avg_loss 0.39599164 | valid_avg_loss 0.48660553 | valid_acc 0.70547848 | valid_f1 [0.87530073 0.48879599 0.63011396 0.76882997 0.79026026] | valid_avg_f1 0.71066018 |valid_macro_f1 0.71066018 | valid_auc 0.84865750
+[ FOLD 0 ] [ EPOCH 51 ] time: 262.17s | train_avg_loss 0.39848147 | valid_avg_loss 0.47587730 | valid_acc 0.71357168 | valid_f1 [0.87138102 0.51553749 0.64084436 0.7377598  0.79644033] | valid_avg_f1 0.71239260 |valid_macro_f1 0.71239260 | valid_auc 0.85663925
+[ FOLD 0 ] [ EPOCH 52 ] time: 258.67s | train_avg_loss 0.39251351 | valid_avg_loss 0.49959669 | valid_acc 0.72106012 | valid_f1 [0.87993283 0.52447238 0.64931969 0.73066519 0.77612705] | valid_avg_f1 0.71210343 |valid_macro_f1 0.71210343 | valid_auc 0.85904497
+[ FOLD 0 ] [ EPOCH 53 ] time: 259.02s | train_avg_loss 0.39204893 | valid_avg_loss 0.47959745 | valid_acc 0.73125222 | valid_f1 [0.90467301 0.5211639  0.65016239 0.74351046 0.80946046] | valid_avg_f1 0.72579404 |valid_macro_f1 0.72579404 | valid_auc 0.85990368
+[ FOLD 0 ] [ EPOCH 54 ] time: 261.81s | train_avg_loss 0.38993208 | valid_avg_loss 0.49873530 | valid_acc 0.70051583 | valid_f1 [0.86919461 0.47741138 0.61679079 0.78533109 0.80190998] | valid_avg_f1 0.71012757 |valid_macro_f1 0.71012757 | valid_auc 0.84759827
+[ FOLD 0 ] [ EPOCH 55 ] time: 262.00s | train_avg_loss 0.39157187 | valid_avg_loss 0.48628521 | valid_acc 0.69167556 | valid_f1 [0.88675293 0.49771341 0.57033184 0.70199011 0.80717489] | valid_avg_f1 0.69279264 |valid_macro_f1 0.69279264 | valid_auc 0.84724781
+[ FOLD 0 ] [ EPOCH 56 ] time: 259.43s | train_avg_loss 0.38664585 | valid_avg_loss 0.49354315 | valid_acc 0.70076485 | valid_f1 [0.85655842 0.4774147  0.64837332 0.76726343 0.81279676] | valid_avg_f1 0.71248133 |valid_macro_f1 0.71248133 | valid_auc 0.84459751
+[ FOLD 0 ] [ EPOCH 57 ] time: 359.95s | train_avg_loss 0.38323590 | valid_avg_loss 0.48680132 | valid_acc 0.72675205 | valid_f1 [0.90140081 0.5131989  0.64334962 0.75012526 0.80244549] | valid_avg_f1 0.72210402 |valid_macro_f1 0.72210402 | valid_auc 0.85832483
+[ FOLD 0 ] [ EPOCH 58 ] time: 367.16s | train_avg_loss 0.38305959 | valid_avg_loss 0.50787788 | valid_acc 0.66549271 | valid_f1 [0.8385732  0.45536235 0.55948736 0.7853125  0.76655421] | valid_avg_f1 0.68105792 |valid_macro_f1 0.68105792 | valid_auc 0.83615548
+[ FOLD 0 ] [ EPOCH 59 ] time: 266.39s | train_avg_loss 0.38174305 | valid_avg_loss 0.50358704 | valid_acc 0.66307364 | valid_f1 [0.88969459 0.45218188 0.4738351  0.76487503 0.78600558] | valid_avg_f1 0.67331843 |valid_macro_f1 0.67331843 | valid_auc 0.83559165
+[ FOLD 0 ] [ EPOCH 60 ] time: 257.26s | train_avg_loss 0.37995530 | valid_avg_loss 0.49163975 | valid_acc 0.72611170 | valid_f1 [0.86247575 0.51197689 0.68642338 0.75938742 0.80134219] | valid_avg_f1 0.72432113 |valid_macro_f1 0.72432113 | valid_auc 0.85944647
+[ FOLD 0 ] [ EPOCH 61 ] time: 301.49s | train_avg_loss 0.37887074 | valid_avg_loss 0.49148232 | valid_acc 0.70635005 | valid_f1 [0.88265701 0.49511455 0.62460248 0.74718127 0.80375158] | valid_avg_f1 0.71066138 |valid_macro_f1 0.71066138 | valid_auc 0.84872261
+[ FOLD 0 ] [ EPOCH 62 ] time: 367.54s | train_avg_loss 0.38013643 | valid_avg_loss 0.50080610 | valid_acc 0.72598719 | valid_f1 [0.90786396 0.52095894 0.63361328 0.74187434 0.7802532 ] | valid_avg_f1 0.71691274 |valid_macro_f1 0.71691274 | valid_auc 0.85832425
+[ FOLD 0 ] [ EPOCH 63 ] time: 328.26s | train_avg_loss 0.37931441 | valid_avg_loss 0.50460230 | valid_acc 0.70803984 | valid_f1 [0.87200852 0.50470263 0.62985338 0.74258518 0.76822762] | valid_avg_f1 0.70347547 |valid_macro_f1 0.70347547 | valid_auc 0.85418097
+[ FOLD 0 ] [ EPOCH 64 ] time: 256.38s | train_avg_loss 0.37875427 | valid_avg_loss 0.48394539 | valid_acc 0.68936322 | valid_f1 [0.87024778 0.48327446 0.58576553 0.7332662  0.803003  ] | valid_avg_f1 0.69511139 |valid_macro_f1 0.69511139 | valid_auc 0.84665907
+[ FOLD 0 ] [ EPOCH 65 ] time: 298.90s | train_avg_loss 0.38117856 | valid_avg_loss 0.49003358 | valid_acc 0.72403059 | valid_f1 [0.89203919 0.52559727 0.63926023 0.71218081 0.80777332] | valid_avg_f1 0.71537016 |valid_macro_f1 0.71537016 | valid_auc 0.86073008
+[ FOLD 0 ] [ EPOCH 66 ] time: 334.90s | train_avg_loss 0.37674283 | valid_avg_loss 0.49854219 | valid_acc 0.73785130 | valid_f1 [0.8899736  0.51865392 0.6856093  0.74750207 0.82886447] | valid_avg_f1 0.73412067 |valid_macro_f1 0.73412067 | valid_auc 0.86062638
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 67 ] time: 255.79s | train_avg_loss 0.37013693 | valid_avg_loss 0.48056326 | valid_acc 0.73061188 | valid_f1 [0.87264047 0.51376835 0.6845012  0.74585835 0.82498585] | valid_avg_f1 0.72835085 |valid_macro_f1 0.72835085 | valid_auc 0.86100170
+[ FOLD 0 ] [ EPOCH 68 ] time: 256.78s | train_avg_loss 0.37061218 | valid_avg_loss 0.49340965 | valid_acc 0.69555318 | valid_f1 [0.87268163 0.48509609 0.59512833 0.73091562 0.83018313] | valid_avg_f1 0.70280096 |valid_macro_f1 0.70280096 | valid_auc 0.84752458
+[ FOLD 0 ] [ EPOCH 69 ] time: 258.59s | train_avg_loss 0.36711789 | valid_avg_loss 0.48931856 | valid_acc 0.70090715 | valid_f1 [0.88375263 0.49069415 0.60701863 0.75107542 0.8001885 ] | valid_avg_f1 0.70654587 |valid_macro_f1 0.70654587 | valid_auc 0.84782212
+[ FOLD 0 ] [ EPOCH 70 ] time: 255.50s | train_avg_loss 0.36974054 | valid_avg_loss 0.49058799 | valid_acc 0.68870509 | valid_f1 [0.84037376 0.50272656 0.62694688 0.68226313 0.80867605] | valid_avg_f1 0.69219728 |valid_macro_f1 0.69219728 | valid_auc 0.84535896
+[ FOLD 0 ] [ EPOCH 71 ] time: 257.72s | train_avg_loss 0.36773426 | valid_avg_loss 0.52629517 | valid_acc 0.71122376 | valid_f1 [0.89692044 0.5021846  0.61917863 0.72829964 0.78226029] | valid_avg_f1 0.70576872 |valid_macro_f1 0.70576872 | valid_auc 0.84913689
+[ FOLD 0 ] [ EPOCH 72 ] time: 257.68s | train_avg_loss 0.36855977 | valid_avg_loss 0.50779740 | valid_acc 0.68454287 | valid_f1 [0.82950787 0.48327621 0.61847142 0.73669507 0.77609009] | valid_avg_f1 0.68880813 |valid_macro_f1 0.68880813 | valid_auc 0.84544736
+[ FOLD 0 ] [ EPOCH 73 ] time: 257.10s | train_avg_loss 0.36751209 | valid_avg_loss 0.49076456 | valid_acc 0.70087158 | valid_f1 [0.89113645 0.50452288 0.58328917 0.7247062  0.78535586] | valid_avg_f1 0.69780211 |valid_macro_f1 0.69780211 | valid_auc 0.85141809
+[ FOLD 0 ] [ EPOCH 74 ] time: 257.41s | train_avg_loss 0.36155131 | valid_avg_loss 0.48737075 | valid_acc 0.71353611 | valid_f1 [0.88432004 0.50332205 0.63473215 0.76457332 0.79082676] | valid_avg_f1 0.71555486 |valid_macro_f1 0.71555486 | valid_auc 0.85310663
+[ FOLD 0 ] [ EPOCH 75 ] time: 257.11s | train_avg_loss 0.36148198 | valid_avg_loss 0.49995384 | valid_acc 0.73110993 | valid_f1 [0.88850603 0.52703567 0.66584134 0.74843626 0.78403412] | valid_avg_f1 0.72277068 |valid_macro_f1 0.72277068 | valid_auc 0.86152371
+[ FOLD 0 ] [ EPOCH 76 ] time: 257.74s | train_avg_loss 0.35841449 | valid_avg_loss 0.49396048 | valid_acc 0.71492351 | valid_f1 [0.85583568 0.50633378 0.66634178 0.74746303 0.79347607] | valid_avg_f1 0.71389007 |valid_macro_f1 0.71389007 | valid_auc 0.85553076
+[ FOLD 0 ] [ EPOCH 77 ] time: 256.95s | train_avg_loss 0.36225323 | valid_avg_loss 0.51576601 | valid_acc 0.70971185 | valid_f1 [0.85508959 0.49518346 0.66617273 0.79225915 0.76559343] | valid_avg_f1 0.71485967 |valid_macro_f1 0.71485967 | valid_auc 0.84820722
+[ FOLD 0 ] [ EPOCH 78 ] time: 255.48s | train_avg_loss 0.36082616 | valid_avg_loss 0.50288742 | valid_acc 0.72392387 | valid_f1 [0.87758476 0.51736291 0.66606259 0.73874136 0.79681661] | valid_avg_f1 0.71931364 |valid_macro_f1 0.71931364 | valid_auc 0.85694741
+[ FOLD 0 ] [ EPOCH 79 ] time: 257.62s | train_avg_loss 0.35765705 | valid_avg_loss 0.50129064 | valid_acc 0.74192458 | valid_f1 [0.88865553 0.52397041 0.71006138 0.78398021 0.78011268] | valid_avg_f1 0.73735604 |valid_macro_f1 0.73735604 | valid_auc 0.85988349
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 80 ] time: 257.06s | train_avg_loss 0.35309855 | valid_avg_loss 0.50488712 | valid_acc 0.72525792 | valid_f1 [0.89664626 0.51075686 0.64908695 0.77805293 0.77355098] | valid_avg_f1 0.72161880 |valid_macro_f1 0.72161880 | valid_auc 0.85632877
+[ FOLD 0 ] [ EPOCH 81 ] time: 256.52s | train_avg_loss 0.35561294 | valid_avg_loss 0.49434256 | valid_acc 0.71191747 | valid_f1 [0.86169875 0.51195357 0.65207328 0.77035076 0.75350467] | valid_avg_f1 0.70991621 |valid_macro_f1 0.70991621 | valid_auc 0.85497223
+[ FOLD 0 ] [ EPOCH 82 ] time: 256.51s | train_avg_loss 0.35516729 | valid_avg_loss 0.51588203 | valid_acc 0.70853789 | valid_f1 [0.87433639 0.50998325 0.64129066 0.78653478 0.71676597] | valid_avg_f1 0.70578221 |valid_macro_f1 0.70578221 | valid_auc 0.84849617
+[ FOLD 0 ] [ EPOCH 83 ] time: 255.96s | train_avg_loss 0.35185110 | valid_avg_loss 0.48812733 | valid_acc 0.73898968 | valid_f1 [0.89572807 0.52504234 0.68231001 0.761133   0.79273786] | valid_avg_f1 0.73139025 |valid_macro_f1 0.73139025 | valid_auc 0.86266592
+[ FOLD 0 ] [ EPOCH 84 ] time: 257.79s | train_avg_loss 0.34807885 | valid_avg_loss 0.49596938 | valid_acc 0.72561366 | valid_f1 [0.87342089 0.5099728  0.68046051 0.74876346 0.80959498] | valid_avg_f1 0.72444253 |valid_macro_f1 0.72444253 | valid_auc 0.85602781
+[ FOLD 0 ] [ EPOCH 85 ] time: 257.24s | train_avg_loss 0.35196508 | valid_avg_loss 0.50443450 | valid_acc 0.69861259 | valid_f1 [0.83263434 0.47894934 0.65714659 0.78377326 0.79367282] | valid_avg_f1 0.70923527 |valid_macro_f1 0.70923527 | valid_auc 0.84766752
+[ FOLD 0 ] [ EPOCH 86 ] time: 257.53s | train_avg_loss 0.35125588 | valid_avg_loss 0.50719943 | valid_acc 0.72102455 | valid_f1 [0.90024712 0.50640939 0.62670873 0.75810801 0.79705272] | valid_avg_f1 0.71770519 |valid_macro_f1 0.71770519 | valid_auc 0.85672495
+[ FOLD 0 ] [ EPOCH 87 ] time: 257.37s | train_avg_loss 0.34713397 | valid_avg_loss 0.50090843 | valid_acc 0.73128780 | valid_f1 [0.89141035 0.50327401 0.67779064 0.78747733 0.80039124] | valid_avg_f1 0.73206871 |valid_macro_f1 0.73206871 | valid_auc 0.85668089
+[ FOLD 0 ] [ EPOCH 88 ] time: 256.59s | train_avg_loss 0.35007011 | valid_avg_loss 0.51308597 | valid_acc 0.69845251 | valid_f1 [0.89782082 0.47223831 0.57307517 0.76189054 0.81793722] | valid_avg_f1 0.70459241 |valid_macro_f1 0.70459241 | valid_auc 0.84643351
+[ FOLD 0 ] [ EPOCH 89 ] time: 258.15s | train_avg_loss 0.34806206 | valid_avg_loss 0.56432026 | valid_acc 0.69397012 | valid_f1 [0.79428474 0.48078459 0.68742075 0.78375205 0.75046325] | valid_avg_f1 0.69934108 |valid_macro_f1 0.69934108 | valid_auc 0.84528118
+[ FOLD 0 ] [ EPOCH 90 ] time: 255.58s | train_avg_loss 0.34614651 | valid_avg_loss 0.52323700 | valid_acc 0.69446816 | valid_f1 [0.8688395  0.48548476 0.6133144  0.74575755 0.771872  ] | valid_avg_f1 0.69705364 |valid_macro_f1 0.69705364 | valid_auc 0.84342964
+[ FOLD 0 ] [ EPOCH 91 ] time: 260.23s | train_avg_loss 0.34280987 | valid_avg_loss 0.51804759 | valid_acc 0.69475276 | valid_f1 [0.83726854 0.47754117 0.64116297 0.77036816 0.79648118] | valid_avg_f1 0.70456441 |valid_macro_f1 0.70456441 | valid_auc 0.84742338
+[ FOLD 0 ] [ EPOCH 92 ] time: 381.78s | train_avg_loss 0.34551045 | valid_avg_loss 0.53182085 | valid_acc 0.67063323 | valid_f1 [0.88726488 0.45119698 0.51632661 0.76699611 0.8003992 ] | valid_avg_f1 0.68443676 |valid_macro_f1 0.68443676 | valid_auc 0.83542118
+[ FOLD 0 ] [ EPOCH 93 ] time: 285.34s | train_avg_loss 0.34162563 | valid_avg_loss 0.49973493 | valid_acc 0.74825685 | valid_f1 [0.86446491 0.5268466  0.74139336 0.78612986 0.79721867] | valid_avg_f1 0.74321068 |valid_macro_f1 0.74321068 | valid_auc 0.86463670
+Model Saving....
+model saved: ./result/tinysalient/test_doubledata/fold0_model.pkl
+[ FOLD 0 ] [ EPOCH 94 ] time: 256.98s | train_avg_loss 0.34349662 | valid_avg_loss 0.52555180 | valid_acc 0.72127357 | valid_f1 [0.86255804 0.52568306 0.67754134 0.75093409 0.74959612] | valid_avg_f1 0.71326253 |valid_macro_f1 0.71326253 | valid_auc 0.85709885
+[ FOLD 0 ] [ EPOCH 95 ] time: 255.71s | train_avg_loss 0.34192367 | valid_avg_loss 0.48598725 | valid_acc 0.70419779 | valid_f1 [0.8664555  0.48503141 0.63563338 0.77063947 0.81042078] | valid_avg_f1 0.71363611 |valid_macro_f1 0.71363611 | valid_auc 0.85007802
+[ FOLD 0 ] [ EPOCH 96 ] time: 254.87s | train_avg_loss 0.34036389 | valid_avg_loss 0.49335277 | valid_acc 0.72143365 | valid_f1 [0.8714083  0.50936362 0.67418264 0.73969722 0.82338959] | valid_avg_f1 0.72360827 |valid_macro_f1 0.72360827 | valid_auc 0.85540142
+[ FOLD 0 ] [ EPOCH 97 ] time: 256.15s | train_avg_loss 0.33877630 | valid_avg_loss 0.51721421 | valid_acc 0.66673782 | valid_f1 [0.82592593 0.46755644 0.5806817  0.74168763 0.79465297] | valid_avg_f1 0.68210093 |valid_macro_f1 0.68210093 | valid_auc 0.83849481
+[ FOLD 0 ] [ EPOCH 98 ] time: 255.63s | train_avg_loss 0.33963727 | valid_avg_loss 0.49733835 | valid_acc 0.70492707 | valid_f1 [0.88040935 0.50841958 0.61578533 0.73643411 0.77675885] | valid_avg_f1 0.70356144 |valid_macro_f1 0.70356144 | valid_auc 0.85189383
+[ FOLD 0 ] [ EPOCH 99 ] time: 256.95s | train_avg_loss 0.33674625 | valid_avg_loss 0.49837906 | valid_acc 0.71513696 | valid_f1 [0.8978392  0.49518288 0.62604329 0.76613788 0.79769327] | valid_avg_f1 0.71657930 |valid_macro_f1 0.71657930 | valid_auc 0.85219294
+[ FOLD 0 ] [ EPOCH100 ] time: 255.16s | train_avg_loss 0.33438989 | valid_avg_loss 0.49782132 | valid_acc 0.70387762 | valid_f1 [0.86014053 0.49934453 0.64846008 0.74348073 0.78239013] | valid_avg_f1 0.70676320 |valid_macro_f1 0.70676320 | valid_auc 0.84825338
+[ FOLD 0 ] [ EPOCH101 ] time: 257.48s | train_avg_loss 0.33585295 | valid_avg_loss 0.51614239 | valid_acc 0.71335824 | valid_f1 [0.85913199 0.51437377 0.65969413 0.72562935 0.78101072] | valid_avg_f1 0.70796799 |valid_macro_f1 0.70796799 | valid_auc 0.85632301
+[ FOLD 0 ] [ EPOCH102 ] time: 291.28s | train_avg_loss 0.33194787 | valid_avg_loss 0.49472100 | valid_acc 0.70951619 | valid_f1 [0.86442451 0.49269436 0.64962847 0.76845857 0.7966325 ] | valid_avg_f1 0.71436768 |valid_macro_f1 0.71436768 | valid_auc 0.85304852
+[ FOLD 0 ] [ EPOCH103 ] time: 333.21s | train_avg_loss 0.33372527 | valid_avg_loss 0.50135904 | valid_acc 0.73344006 | valid_f1 [0.89666899 0.51472824 0.66595192 0.75718663 0.8035497 ] | valid_avg_f1 0.72761710 |valid_macro_f1 0.72761710 | valid_auc 0.86014143
+[ FOLD 0 ] [ EPOCH104 ] time: 256.29s | train_avg_loss 0.33013225 | valid_avg_loss 0.52531856 | valid_acc 0.69802561 | valid_f1 [0.85393547 0.49036375 0.63839271 0.77402232 0.75441779] | valid_avg_f1 0.70222641 |valid_macro_f1 0.70222641 | valid_auc 0.84580041
+[ FOLD 0 ] [ EPOCH105 ] time: 255.66s | train_avg_loss 0.33288754 | valid_avg_loss 0.52738648 | valid_acc 0.70768410 | valid_f1 [0.86913689 0.49360638 0.63451692 0.76141761 0.76772394] | valid_avg_f1 0.70528035 |valid_macro_f1 0.70528035 | valid_auc 0.85198902
+[ FOLD 0 ] [ EPOCH106 ] time: 256.16s | train_avg_loss 0.33190968 | valid_avg_loss 0.53269322 | valid_acc 0.75067592 | valid_f1 [0.89686941 0.52626159 0.71326571 0.74984858 0.80468199] | valid_avg_f1 0.73818546 |valid_macro_f1 0.73818546 | valid_auc 0.86193382
+[ FOLD 0 ] [ EPOCH107 ] time: 257.17s | train_avg_loss 0.33537667 | valid_avg_loss 0.49536984 | valid_acc 0.72982924 | valid_f1 [0.87181261 0.51580068 0.69160301 0.74321058 0.81393094] | valid_avg_f1 0.72727156 |valid_macro_f1 0.72727156 | valid_auc 0.85861216
+[ FOLD 0 ] [ EPOCH108 ] time: 258.23s | train_avg_loss 0.32687260 | valid_avg_loss 0.51455163 | valid_acc 0.68285308 | valid_f1 [0.84651343 0.4674243  0.60435559 0.74742607 0.82678019] | valid_avg_f1 0.69849991 |valid_macro_f1 0.69849991 | valid_auc 0.84110732
+[ FOLD 0 ] [ EPOCH109 ] time: 257.92s | train_avg_loss 0.33164720 | valid_avg_loss 0.51741916 | valid_acc 0.73061188 | valid_f1 [0.89277793 0.50191723 0.67139861 0.77168985 0.82042089] | valid_avg_f1 0.73164090 |valid_macro_f1 0.73164090 | valid_auc 0.85585590
+[ FOLD 0 ] [ EPOCH110 ] time: 258.11s | train_avg_loss 0.33087025 | valid_avg_loss 0.50379202 | valid_acc 0.73054073 | valid_f1 [0.89636739 0.50129481 0.65721599 0.77551633 0.81962671] | valid_avg_f1 0.73000425 |valid_macro_f1 0.73000425 | valid_auc 0.85970431
+[ FOLD 0 ] [ EPOCH111 ] time: 256.92s | train_avg_loss 0.32568369 | valid_avg_loss 0.51194207 | valid_acc 0.73078975 | valid_f1 [0.86824931 0.51292748 0.6933629  0.75959246 0.79295334] | valid_avg_f1 0.72541710 |valid_macro_f1 0.72541710 | valid_auc 0.86040712
+[ FOLD 0 ] [ EPOCH112 ] time: 256.25s | train_avg_loss 0.32623524 | valid_avg_loss 0.49931602 | valid_acc 0.72618285 | valid_f1 [0.88585768 0.48883244 0.66355987 0.79711307 0.8195363 ] | valid_avg_f1 0.73097987 |valid_macro_f1 0.73097987 | valid_auc 0.85609331
+[ FOLD 0 ] [ EPOCH113 ] time: 256.63s | train_avg_loss 0.32296329 | valid_avg_loss 0.52475114 | valid_acc 0.72502668 | valid_f1 [0.87130276 0.50517957 0.68702677 0.77677617 0.77474812] | valid_avg_f1 0.72300668 |valid_macro_f1 0.72300668 | valid_auc 0.85492347
+===============begin fold 0 test===============
+test_all_time: 6.525957107543945
+the f1:[0.8543273  0.49659982 0.77524453 0.8105796  0.80628836]
+the average f1 is: 0.7486079335212708
+Normalized confusion matrix
+the accuracy of every classes:[0.76, 0.74, 0.68, 0.92, 0.85]
+[[7.57335289e-01 2.11856495e-01 1.66711123e-03 3.06748466e-03
+  2.60736196e-02]
+ [3.22187391e-02 7.43991641e-01 1.09543713e-01 1.28874956e-02
+  1.01358412e-01]
+ [1.86796179e-03 1.68863746e-01 6.76895981e-01 1.06847414e-01
+  4.55248973e-02]
+ [1.61472630e-04 2.90650735e-03 7.76683352e-02 9.17971904e-01
+  1.29178104e-03]
+ [1.85396463e-03 1.18653736e-01 2.35310896e-02 3.85054193e-03
+  8.52110667e-01]]
+Confusion matrix, without normalization
+[[11357  3177    25    46   391]
+ [  185  4272   629    74   582]
+ [   35  3164 12683  2002   853]
+ [    1    18   481  5685     8]
+ [   13   832   165    27  5975]]
+[ FOLD 0 ] end of test | test_avg_f1 0.74860793 | test_avg_loss 0.54702044 | test_acc 0.75876993 | test_macro_f1 0.74860792 | test_auc 0.86642070
+test_all_time: 6.525957107543945
+[2025-06-23 13:37:08] INFO (nni/MainThread) Intermediate result: 0.7486079335212708  (Index 0)
+===============k fold mean result===============
+[ ALLFOLD ] kfold_mean_marco_f1:  0.74860793
+[ ALLFOLD ] kfold_mean_macro_macro_f1:  0.7486079196645676
+[ ALLFOLD ] kfold_mean_acc:  0.7587699316628702
+[ ALLFOLD ] kfold_mean_auc:  0.8664206962853088
+
+
+[ ALLFOLD ] allcm_acc:  0.7587699316628702
+[ FDM ] allcm_Sensitivity:  0.789661096471419
+[ FDM ] allcm_Specificity:  0.9431802960991986
+[ FDM ] allcm_Macro-F1:  0.7486079196645676
+[ FDM ] allcm_kappa:  0.6915328010888844
+[ FDM ] allcm_BaAcc:  0.789661096471419
+[ FDM ] allcm_AUROC:  nan
+[ FDM ] allcm_AUCPR:  nan
+
+
+Normalized confusion matrix
+the accuracy of every classes:[0.76, 0.74, 0.68, 0.92, 0.85]
+[[7.57335289e-01 2.11856495e-01 1.66711123e-03 3.06748466e-03
+  2.60736196e-02]
+ [3.22187391e-02 7.43991641e-01 1.09543713e-01 1.28874956e-02
+  1.01358412e-01]
+ [1.86796179e-03 1.68863746e-01 6.76895981e-01 1.06847414e-01
+  4.55248973e-02]
+ [1.61472630e-04 2.90650735e-03 7.76683352e-02 9.17971904e-01
+  1.29178104e-03]
+ [1.85396463e-03 1.18653736e-01 2.35310896e-02 3.85054193e-03
+  8.52110667e-01]]
+Confusion matrix, without normalization
+[[11357  3177    25    46   391]
+ [  185  4272   629    74   582]
+ [   35  3164 12683  2002   853]
+ [    1    18   481  5685     8]
+ [   13   832   165    27  5975]]
+[ ALLFOLD ] kfold_mirco_f1:  [0.8543273  0.49659982 0.77524453 0.8105796  0.80628836]
+[ ALLFOLD ] kfold_mean_mirco_f1:  0.74860793
+[2025-06-23 13:37:11] INFO (nni/MainThread) Final result: 0.7486079335212708
+===============all time cost: 31128.406695127487===============

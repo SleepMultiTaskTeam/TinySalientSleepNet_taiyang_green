@@ -1,0 +1,6 @@
+{
+    "input_epoch_num": {
+      "_type": "choice",
+      "_value": [64, 120, 256]
+    }
+  }

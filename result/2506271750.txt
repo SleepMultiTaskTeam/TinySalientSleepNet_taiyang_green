@@ -1,0 +1,259 @@
+==========some new opts changed:==========
+testonly: True
+dataset: taiyang
+==========all opts:==========
+seed: 43
+kfold_num: 1
+input_epoch_num: 60
+freq: 100
+batch_size: 8
+num_epochs: 200
+stop_patience: 20
+learning_rate: 0.003
+weight_decay: 0
+dropout_rate: 0
+beta_1: 0.9
+beta_2: 0.999
+weight: tensor([ 1., 10.,  1.,  6.,  6.])
+train_val_cutrate: 0.8
+test_size: 0.1
+val_size: 0.1
+test_dataset: self
+model_dir: None
+data_dir: D:\dataset\SHHS\SHHS1
+ISRUC1_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-1/
+ISRUC3_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/ISRUC-3/
+MASS_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/MASS_SS3_3000_25C-Cz/
+SHHS_dir: ../../Datasets/shhs1_process6
+SLEEPEDF153_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/sleep-edf-153-3chs
+taiyang_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2
+ccshs_dir: /mnt/nfsData17/JiaQianru/dataset/ccshs/polysomnography
+cfs_dir: /mnt/nfsData17/JiaQianru/dataset/cfs/polysomnography
+homepap_dir: /mnt/nfsData17/ZhaiMengjie/Datasets/homepap/polysomnography
+composite_dir: /mnt/nfsData18/ZhangShaoqi/CODES/SSSC_1/result/composite_dataset
+dataset: ['taiyang']
+ISRUC1_channel: ['C3_A2', 'O1_A2', 'LOC_A2']
+ISRUC1_channel2: ['C4_A1', 'O2_A1', 'ROC_A1']
+ISRUC3_channel: ['C3_A2', 'O1_A2', 'LOC_A2']
+ISRUC3_channel2: ['C4_A1', 'O2_A1', 'ROC_A1']
+MASS_channel: ['C3', 'O1', 'EogL']
+MASS_channel2: ['C4', 'O2', 'EogR']
+SHHS_channel: ['EEG', 'EEG(sec)', 'EOG(L)', 'EMG']
+SLEEPEDF153_channel: ['Fpz-Cz', 'Pz-Oz', 'EOG']
+SLEEPEDF153_channel2: ['Fpz-Cz', 'Pz-Oz', 'EOG']
+taiyang_channel: ['EEG C3-REF', 'EEG O1-REF', 'EOG1']
+ccshs_channel: ['C4', 'ROC']
+cfs_channel: ['C4', 'ROC']
+homepap_channel: ['C3', 'O1', 'E1']
+homepap_channel2: ['C4', 'O2', 'E2']
+yasa_feature: False
+save_dir: ./result/tinysalient/test_doubledata/
+save_model_name: model.pkl
+testonly: True
+JXY_shhs1-300_dir: /mnt/nfsData19/ZhangShaoqi/DATASETS/shhs_processed/shhs1
+JXY_shhs1-300_channel: ['C3', 'C4', 'EMG', 'EOG(L)', 'EOG(R)', 'ECG', 'Airflow', 'Sp02']
+JXY_out_dim: 5
+model_select: TinySalientSleepNet
+task: sleep_stage_classification
+data_double: True
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/0BEA0C30-BED2-45F0-9D46-CBBF643C746C/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/0BEA0C30-BED2-45F0-9D46-CBBF643C746C/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(5313000, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/17A103D5-54FB-4217-8100-CEF344EE1CB0/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/17A103D5-54FB-4217-8100-CEF344EE1CB0/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(4150300, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/182DCAB8-D83E-4CCB-A04B-563DD9B299C0/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/182DCAB8-D83E-4CCB-A04B-563DD9B299C0/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(1759900, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/18D9F2A8-F7CC-4A3F-B700-1E289FD0B19D/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/18D9F2A8-F7CC-4A3F-B700-1E289FD0B19D/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(5314600, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/1B8C25CD-8E01-4FFB-A41C-DDB6213EEA4D/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/1B8C25CD-8E01-4FFB-A41C-DDB6213EEA4D/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(4477500, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/1EFA91D6-C020-485F-9EE4-2B636FF87C86/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/1EFA91D6-C020-485F-9EE4-2B636FF87C86/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3703900, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/2AAE14D4-4D53-4419-A6A4-D0A5079A0A4E/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/2AAE14D4-4D53-4419-A6A4-D0A5079A0A4E/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3734500, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/2E1657AF-17C2-4B9D-B150-CC059AF1DC5D/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/2E1657AF-17C2-4B9D-B150-CC059AF1DC5D/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(4080300, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/2F3A19B9-54EA-4D48-ABDE-59C8EF1DEFD8/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/2F3A19B9-54EA-4D48-ABDE-59C8EF1DEFD8/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(4919600, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/3B41BBDA-54D9-433E-B17E-45A23842026B/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/3B41BBDA-54D9-433E-B17E-45A23842026B/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(652900, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/3CF9281E-68B7-4BDE-916D-62339563C8AC/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/3CF9281E-68B7-4BDE-916D-62339563C8AC/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3838000, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/3CFB9F3B-D9BB-4B03-BC54-6281CC230FCB/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/3CFB9F3B-D9BB-4B03-BC54-6281CC230FCB/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(5066600, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/45EE4F57-23E0-4DEA-9271-C34A3C15839D/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/45EE4F57-23E0-4DEA-9271-C34A3C15839D/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3761000, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/4B760A44-DBBC-41BD-87CC-7DFF77D89727/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/4B760A44-DBBC-41BD-87CC-7DFF77D89727/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3795300, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/4D19983A-9E01-46EA-9DA1-824BE3616113/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/4D19983A-9E01-46EA-9DA1-824BE3616113/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3840200, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/51D97701-4D0E-4D13-A0CE-BFE647C526AE/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/51D97701-4D0E-4D13-A0CE-BFE647C526AE/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(1386800, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/524BE0D7-995E-48CB-82FB-D539E3E498EC/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/524BE0D7-995E-48CB-82FB-D539E3E498EC/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(5324400, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/59ADB346-F18F-4AAF-A609-CAF85355955E/0.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/59ADB346-F18F-4AAF-A609-CAF85355955E/0.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3470100, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/5C46E640-4946-4889-B2CC-A3F315975459/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/5C46E640-4946-4889-B2CC-A3F315975459/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3817100, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/73EDF641-7AD9-4C84-9C57-B657A0373E66/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/73EDF641-7AD9-4C84-9C57-B657A0373E66/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(5255000, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/79E3EB47-E521-42C9-AD64-75FF2C0ACC20/0.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/79E3EB47-E521-42C9-AD64-75FF2C0ACC20/0.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3629300, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/84E0FF22-E624-4E73-A9C7-3F3B787E6A74/0.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/84E0FF22-E624-4E73-A9C7-3F3B787E6A74/0.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3706400, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/87C73495-4AC6-4DC0-A1EC-57A3E4D3C86E/0.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/87C73495-4AC6-4DC0-A1EC-57A3E4D3C86E/0.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3950000, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/96D59CEE-C445-4256-9423-2010F9D76BB5/0.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/96D59CEE-C445-4256-9423-2010F9D76BB5/0.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(1020500, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/97B77D45-8C4E-41C9-8A2C-059B484F172B/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/97B77D45-8C4E-41C9-8A2C-059B484F172B/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(628400, 3)
+使用的路径是: /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/9AB04B6C-D1BD-4048-9EB5-493C7450B2DD/X.edf
+Extracting EDF parameters from /mnt/nfsData17/ZhaiMengjie/Datasets/taiyang_2/9AB04B6C-D1BD-4048-9EB5-493C7450B2DD/X.edf...
+EDF file detected
+Setting channel info structure...
+Creating raw.info structure...
+【xall shape:】(3952300, 3)
+===============gen test data only===============
+test data shape:  512
+epoch_num_by_sub: [1740, 1380, 540, 1740, 1440, 1200, 1200, 1320, 1620, 180, 1260, 1680, 1200, 1260, 1260, 420, 1740, 1140, 1260, 1740, 1200, 1200, 1260, 300, 180, 1260]
+===============begin fold 0 test===============
+test_all_time: 4.776390552520752
+the f1:[0.8200564  0.24037911 0.7646428  0.6679462  0.6291413 ]
+the average f1 is: 0.624433159828186
+Normalized confusion matrix
+the accuracy of every classes:[0.75, 0.65, 0.67, 0.53, 0.74]
+[[7.47362822e-01 1.44402092e-01 5.40732205e-03 3.54578495e-04
+  1.02473185e-01]
+ [1.00545596e-01 6.52377241e-01 3.74123149e-02 0.00000000e+00
+  2.09664848e-01]
+ [1.34294137e-02 2.24697019e-01 6.71880118e-01 8.18866689e-03
+  8.18047822e-02]
+ [1.01112235e-03 1.97168857e-02 4.49949444e-01 5.27805865e-01
+  1.51668352e-03]
+ [1.39939486e-01 1.08925870e-01 1.13464448e-02 0.00000000e+00
+  7.39788200e-01]]
+Confusion matrix, without normalization
+[[8431 1629   61    4 1156]
+ [ 129  837   48    0  269]
+ [ 164 2744 8205  100  999]
+ [   2   39  890 1044    3]
+ [ 555  432   45    0 2934]]
+========== 统计太阳电子15个sub的acc和f1 ==========
+[ 太阳sub 1 ] ACC: 0.75574713, macro_F1: 0.68151110, weighted_F1: 0.80330519, all F1: [0.88941175 0.12790698 0.7788546  0.8780488  0.73333335]
+[ 太阳sub 2 ] ACC: 0.59565217, macro_F1: 0.42843150, weighted_F1: 0.64068909, all F1: [0.8752887  0.06111111 0.5955882  0.         0.61016953]
+[ 太阳sub 3 ] ACC: 0.96111111, macro_F1: 0.47975419, weighted_F1: 0.96368868, all F1: [0.9881656  0.25       0.68085104 0.        ]
+[ 太阳sub 4 ] ACC: 0.81896552, macro_F1: 0.53198913, weighted_F1: 0.85693117, all F1: [0.956701   0.05555556 0.7521008  0.125      0.7705883 ]
+[ 太阳sub 5 ] ACC: 0.72986111, macro_F1: 0.69206876, weighted_F1: 0.76962708, all F1: [0.8789809  0.32458234 0.78517276 0.71428573 0.75732213]
+[ 太阳sub 6 ] ACC: 0.71500000, macro_F1: 0.60239828, weighted_F1: 0.73800960, all F1: [0.8277439  0.47058824 0.8603104  0.25095057]
+[ 太阳sub 7 ] ACC: 0.68250000, macro_F1: 0.57016751, weighted_F1: 0.70472115, all F1: [0.5365854  0.06289309 0.78706205 0.88636357 0.57793343]
+[ 太阳sub 8 ] ACC: 0.60530303, macro_F1: 0.57118593, weighted_F1: 0.64030322, all F1: [0.44948456 0.34375    0.8211806  0.7356322  0.5058824 ]
+[ 太阳sub 9 ] ACC: 0.73641975, macro_F1: 0.70859122, weighted_F1: 0.78650659, all F1: [0.82066876 0.2517815  0.8144239  0.9102563  0.74582565]
+[ 太阳sub 10 ] ACC: 0.96666667, macro_F1: 0.57598001, weighted_F1: 0.95777327, all F1: [0.991098  0.7368421 0.       ]
+[ 太阳sub 11 ] ACC: 0.71825397, macro_F1: 0.64629464, weighted_F1: 0.75209561, all F1: [0.59876543 0.25000003 0.85783523 0.8130081  0.71186435]
+[ 太阳sub 12 ] ACC: 0.81964286, macro_F1: 0.72791354, weighted_F1: 0.84025057, all F1: [0.93712926 0.38922155 0.79015243 0.78947365 0.73359066]
+[ 太阳sub 13 ] ACC: 0.55333333, macro_F1: 0.46731362, weighted_F1: 0.60969386, all F1: [0.8046422  0.11455847 0.5931034  0.09803922 0.7262248 ]
+[ 太阳sub 14 ] ACC: 0.78571429, macro_F1: 0.67175278, weighted_F1: 0.80592311, all F1: [0.92857146 0.43099272 0.81710213 0.5103448 ]
+[ 太阳sub 15 ] ACC: 0.82142857, macro_F1: 0.71725035, weighted_F1: 0.83989635, all F1: [0.9536842  0.2857143  0.79342717 0.7375415  0.8158845 ]
+[ 太阳15个sub平均 ] ACC: 0.75103997, macro_F1: 0.60484017, weighted_F1: 0.78062764, std_ACC: 0.11498706, std_macro_F1: 0.09394730, std_weighted_F1: 0.10197248
+[ FOLD 0 ] end of test | test_avg_f1 0.62443316 | test_avg_loss 0.89345819 | test_acc 0.69827474 | test_macro_f1 0.62443316 | test_auc 0.00000000
+test_all_time: 4.776390552520752
+[2025-06-27 09:54:59] INFO (nni/MainThread) Intermediate result: 0.624433159828186  (Index 0)

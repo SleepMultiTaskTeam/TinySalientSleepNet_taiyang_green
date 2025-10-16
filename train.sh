@@ -1,0 +1,3 @@
+# python /data/ZhaiMengjie/work/TaiYang/TinySalientSleepNet_taiyang_green/train_shhs_unet_copy.py --testonly true --dataset taiyang --save_dir /data/ZhaiMengjie/work/TaiYang/TinySalientSleepNet_taiyang_green/result/tinysalient/test_doubledata/experiment_20250630_034841/ | tee -a /mnt/nfsData18/ZhaiMengjie/work/TaiYang/TinySalientSleepNet_taiyang_green/result/tinysalient/test_2506291603.txt
+python /data/ZhaiMengjie/work/TaiYang/TinySalientSleepNet_taiyang_green/train_shhs_unet_copy.py
+# python /data/ZhaiMengjie/work/TaiYang/TinySalientSleepNet_taiyang_green/train_shhs_unet_copy.py --testonly true --dataset taiyang

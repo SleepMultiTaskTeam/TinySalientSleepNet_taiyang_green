@@ -1,0 +1,136 @@
+/data/ZhangShaoqi/miniconda3/lib/python3.7/site-packages/nni/runtime/platform/standalone.py:32: RuntimeWarning: [1m[31mRunning trial code without runtime. Please check the tutorial if you are new to NNI: [33mhttps://nni.readthedocs.io/en/stable/tutorials/hpo_quickstart_pytorch/main.html[0m
+  warnings.warn(warning_message, RuntimeWarning)
+==========some new opts changed:==========
+gpu_device: 3
+dataset: ISRUC3
+ISRUC3_channel: C4_A1,ROC_A1
+window_size: 120
+num_epochs: 1
+save_dir: result/test_1epoch/
+==========all opts:==========
+seed: 43
+kfold_num: 1
+input_epoch_num: 120
+freq: 100
+batch_size: 8
+num_epochs: 1
+stop_patience: 20
+learning_rate: 0.003
+weight_decay: 0
+dropout_rate: 0
+beta_1: 0.9
+beta_2: 0.999
+weight: tensor([ 1., 10.,  1.,  6.,  6.])
+train_val_cutrate: 0.8
+test_size: 0.1
+val_size: 0.1
+test_dataset: self
+model_dir: None
+data_dir: D:\dataset\SHHS\SHHS1
+ISRUC1_dir: ../../Datasets/ISRUC-1/
+ISRUC3_dir: ../../Datasets/ISRUC-3/
+MASS_dir: ../../Datasets/MASS_SS3_3000_25C-Cz/
+SHHS_dir: ../../Datasets/shhs1_process6
+SLEEPEDF153_dir: /mnt/nfsData11/JiaQianru/dataset/sleep-edf-153-3chs
+taiyang_dir: /mnt/nfsData18/ZhangShaoqi/Datasets/taiyang_2
+ccshs_dir: /mnt/nfsData17/JiaQianru/dataset/ccshs/polysomnography
+cfs_dir: /mnt/nfsData17/JiaQianru/dataset/cfs/polysomnography
+homepap_dir: /mnt/nfsData17/OuXiaoyu/dataset/homepap/polysomnography
+composite_dir: /mnt/nfsData18/ZhangShaoqi/CODES/SSSC_1/result/composite_dataset
+dataset: ['ISRUC3']
+ISRUC1_channel: ['F4_A1', 'C4_A1', 'ROC_A1', 'X1']
+ISRUC3_channel: ['C4_A1', 'ROC_A1']
+MASS_channel: ['F4', 'C4', 'EogR', 'Emg1']
+SHHS_channel: ['EEG', 'EEG(sec)', 'EOG(L)', 'EMG']
+SLEEPEDF153_channel: ['Fpz-Cz', 'EOG']
+taiyang_channel: ['EEG C3-REF', 'EEG C4-REF', 'EOG1', 'EMG']
+ccshs_channel: ['C4', 'ROC']
+cfs_channel: ['C4', 'ROC']
+homepap_channel: ['C4', 'E1']
+yasa_feature: False
+save_dir: result/test_1epoch/
+save_model_name: model.pkl
+testonly: False
+JXY_shhs1-300_dir: /mnt/nfsData19/ZhangShaoqi/DATASETS/shhs_processed/shhs1
+JXY_shhs1-300_channel: ['C3', 'C4', 'EMG', 'EOG(L)', 'EOG(R)', 'ECG', 'Airflow', 'Sp02']
+JXY_out_dim: 5
+model_select: TinySalientSleepNet
+task: sleep_stage_classification
+train_num:  8 val_num:  1 test_num:  1
+../../Datasets/ISRUC-3/subject1.mat
+../../Datasets/ISRUC-3/subject10.mat
+../../Datasets/ISRUC-3/subject2.mat
+../../Datasets/ISRUC-3/subject3.mat
+../../Datasets/ISRUC-3/subject4.mat
+../../Datasets/ISRUC-3/subject5.mat
+../../Datasets/ISRUC-3/subject6.mat
+../../Datasets/ISRUC-3/subject7.mat
+../../Datasets/ISRUC-3/subject8.mat
+../../Datasets/ISRUC-3/subject9.mat
+load data finish
+===============gen train:val:test data===============
+train data shape:  51
+val data shape:  8
+test data shape:  7
+===============begin fold 0 train===============
+/data/ZhangShaoqi/miniconda3/lib/python3.7/site-packages/torch/functional.py:478: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  /opt/conda/conda-bld/pytorch_1659484809535/work/aten/src/ATen/native/TensorShape.cpp:2894.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+[ FOLD 0 ] [ EPOCH  1 ] time:  6.76s | train_avg_loss 1.50747812 | valid_avg_loss 1.55909467 | valid_acc 0.15833333 | valid_f1 [0.         0.20979021 0.         0.44761905 0.        ] | valid_avg_f1 0.13148185 |valid_macro_f1 0.13148185 | valid_auc 0.53515311
+Model Saving....
+model saved: result/test_1epoch/fold0_model.pkl
+===============begin fold 0 test===============
+test_all_time: 0.1093447208404541
+the f1:[0.        0.3785803 0.        0.82494   0.       ]
+the average f1 is: 0.24070405960083008
+Normalized confusion matrix
+the accuracy of every classes:[0.0, 0.98, 0.0, 0.76, 0.0]
+[[0.         0.94736842 0.         0.05263158 0.        ]
+ [0.         0.98064516 0.         0.01935484 0.        ]
+ [0.         0.96219931 0.         0.03780069 0.        ]
+ [0.         0.23555556 0.         0.76444444 0.        ]
+ [0.         1.         0.         0.         0.        ]]
+Confusion matrix, without normalization
+[[  0 108   0   6   0]
+ [  0 152   0   3   0]
+ [  0 280   0  11   0]
+ [  0  53   0 172   0]
+ [  0  55   0   0   0]]
+[ FOLD 0 ] end of test | test_avg_f1 0.24070406 | test_avg_loss 1.48232853 | test_acc 0.38571429 | test_macro_f1 0.24070407 | test_auc 0.59884817
+test_all_time: 0.1093447208404541
+/data/ZhangShaoqi/miniconda3/lib/python3.7/site-packages/json_tricks/encoders.py:419: UserWarning: json-tricks: numpy scalar serialization is experimental and may work differently in future versions
+  warnings.warn('json-tricks: numpy scalar serialization is experimental and may work differently in future versions')
+[2025-04-24 03:32:12] [32mIntermediate result: 0.24070405960083008  (Index 0)[0m
+===============k fold mean result===============
+[ ALLFOLD ] kfold_mean_marco_f1:  0.24070406
+[ ALLFOLD ] kfold_mean_macro_macro_f1:  0.24070407434948676
+[ ALLFOLD ] kfold_mean_acc:  0.38571428571428573
+[ ALLFOLD ] kfold_mean_auc:  0.5988481689290639
+
+
+[ ALLFOLD ] allcm_acc:  0.38571428571428573
+[ FDM ] allcm_Sensitivity:  0.3490179211469534
+[ FDM ] allcm_Specificity:  0.8486784167111745
+[ FDM ] allcm_Macro-F1:  0.24070407434948676
+[ FDM ] allcm_kappa:  0.22869955156950672
+[ FDM ] allcm_BaAcc:  0.3490179211469534
+[ FDM ] allcm_AUROC:  nan
+[ FDM ] allcm_AUCPR:  nan
+
+
+Normalized confusion matrix
+the accuracy of every classes:[0.0, 0.98, 0.0, 0.76, 0.0]
+[[0.         0.94736842 0.         0.05263158 0.        ]
+ [0.         0.98064516 0.         0.01935484 0.        ]
+ [0.         0.96219931 0.         0.03780069 0.        ]
+ [0.         0.23555556 0.         0.76444444 0.        ]
+ [0.         1.         0.         0.         0.        ]]
+Confusion matrix, without normalization
+[[  0 108   0   6   0]
+ [  0 152   0   3   0]
+ [  0 280   0  11   0]
+ [  0  53   0 172   0]
+ [  0  55   0   0   0]]
+[ ALLFOLD ] kfold_mirco_f1:  [0.        0.3785803 0.        0.82494   0.       ]
+[ ALLFOLD ] kfold_mean_mirco_f1:  0.24070406
+[2025-04-24 03:32:13] [32mFinal result: 0.24070405960083008[0m
+===============all time cost: 12.617187261581421===============
